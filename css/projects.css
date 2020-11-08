@@ -1,5 +1,5 @@
 .projects {
-  height: 1800px;
+  height: 2300px;
   animation-duration: 1s;
   animation-name: photoA;
   animation-timing-function: linear;
@@ -18,6 +18,7 @@
   font-size: 4.5rem;
   flex-grow: 1;
   text-align: center;
+  
 }
 
 .textContainerProjects {
@@ -67,6 +68,7 @@
 .titleCont {
   color: whitesmoke;
   font-size: 4rem;
+  margin-bottom: 2rem;
 }
 
 .containerMultiple {
@@ -124,10 +126,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .projects {
-    height: 2800px;
-  }
-
   .projects_title {
     flex-wrap: wrap;
     align-content: center;
