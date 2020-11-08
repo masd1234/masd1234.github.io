@@ -1,0 +1,75 @@
+.homeCont {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  flex-wrap: wrap;
+  animation-duration: 1s;
+  animation-name: photoA;
+  animation-timing-function: linear;
+}
+
+.textContainter {
+  width: 50%;
+  font-size: 2.3rem;
+  color: whitesmoke;
+}
+
+.textContainter a {
+  color: whitesmoke;
+  text-decoration: none;
+  border-radius: 2rem;
+  border: 2px solid whitesmoke;
+  padding: 0.8rem;
+}
+
+.textContainter a:hover {
+  background-color: whitesmoke;
+  color: rgb(32, 105, 241);
+  transition: 1s;
+}
+
+.imgCont {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+}
+
+.img {
+  height: auto;
+  max-width: 100%;
+  border-radius: 30rem;
+}
+
+.myResume {
+  font-size: 2rem;
+}
+
+.projectContainer {
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 768px) {
+  .homeCont {
+    align-content: center;
+  }
+  .textContainter {
+    font-size: 1.6rem;
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .imgCont {
+    width: 50%;
+  }
+
+  .myResume {
+    font-size: 1.5rem;
+  }
+}

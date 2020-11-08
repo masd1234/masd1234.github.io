@@ -1,0 +1,122 @@
+.header {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 3rem;
+  background: rgb(122, 189, 250);
+  background: linear-gradient(
+    86deg,
+    rgba(122, 189, 250, 1) 0%,
+    rgba(0, 117, 255, 1) 48%,
+    rgba(3, 108, 255, 1) 100%,
+    rgba(14, 80, 255, 1) 100%,
+    rgba(239, 71, 6, 1) 100%,
+    rgba(189, 206, 195, 1) 100%,
+    rgba(0, 255, 85, 1) 100%,
+    rgba(14, 145, 255, 1) 100%,
+    rgba(0, 255, 25, 1) 100%,
+    rgba(18, 159, 255, 1) 100%,
+    rgba(50, 116, 255, 1) 100%
+  );
+}
+
+.logo {
+  font-size: 2rem;
+  color: whitesmoke;
+}
+
+.navBar {
+  font-size: 1.6rem;
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.navBar li a {
+  color: whitesmoke;
+  text-decoration: none;
+  border-radius: 2rem;
+  padding: 0.2rem 0.6rem;
+}
+
+.navBar li a:hover {
+  background-color: whitesmoke;
+  color: rgb(38, 146, 247);
+  transition: 1.5s;
+}
+
+.mobileMenu {
+  display: none;
+  background-color: rgb(32, 105, 241);
+  border: none;
+  cursor: pointer;
+}
+
+.mobileMenuItem {
+  background-color: whitesmoke;
+  height: 4px;
+  width: 25px;
+  margin-top: 4px;
+  margin-bottom: 3px;
+  list-style: none;
+}
+
+.mobileMenuDisplayedItems {
+  position: absolute;
+  display: none;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(32, 105, 241);
+  opacity: 0.95;
+}
+
+.mobileMenuDisplayedItems li {
+  list-style: none;
+}
+
+.mobileMenuDisplayedItems li a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  padding: 0.4rem;
+}
+
+.mobileMenuDisplayedItems li a:hover {
+  background-color: whitesmoke;
+  color: rgb(38, 146, 247);
+  transition: 1.5s;
+}
+
+.buttomUndisplay {
+  border: none;
+  background-color: rgb(50, 117, 241);
+  color: whitesmoke;
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 2rem;
+  padding: 0rem 0.5rem;
+}
+
+.buttomUndisplay:hover {
+  background-color: whitesmoke;
+  color: rgb(38, 146, 247);
+  transition: 1.5s;
+}
+
+@media only screen and (max-width: 768px) {
+  .navBar {
+    display: none;
+  }
+  .mobileMenu {
+    display: block;
+  }
+}

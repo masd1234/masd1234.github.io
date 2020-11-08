@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marco Sanchez</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./resources/css/all.css" rel="stylesheet">
+    <script src="./js/index.js" async></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo">Marco Sanchez</h1>
+      <ul class="navBar">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./html/projects.html">Projects</a></li>
+        <li><a href="./html/contact.html">Contact</a></li>
+      </ul>
+      <button class="mobileMenu" onclick="displayMenu()">
+        <div class="mobileMenuItem"></div>
+        <div class="mobileMenuItem"></div>
+        <div class="mobileMenuItem"></div>
+      </button>
+    </header>
+
+    <ul class="mobileMenuDisplayedItems">
+      <button class="buttomUndisplay" onclick="undisplayMenu()">x</button>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./html/projects.html">Projects</a></li>
+      <li><a href="./html/contact.html">Contact</a></li>
+    </ul>
+    <section class="homeCont">
+      <div class="imgCont">
+        <img class="img" src="./resources/profile.jpg" />
+      </div>
+      <div class="textContainter">
+        <h1>Hi, my name is Marco Sanchez</h1>
+        <br />
+        <p>
+          I am a developer with knowledge on the following technologies: HTML,
+          CSS, JavaScript, ReactJs and Git, always looking forward to new challenges and
+          learning new things.
+        </p>
+        <br />
+
+        <p>
+          Currently studying: NodeJs, ExpressJs, Sql, Jquery, Saas and
+          Python.
+        </p>
+        <br />
+        <a href="./resources/marcocvf.pdf" target="_blank" class="myResume"
+          >My resume</a
+        >
+      </div>
+    </section>
+    <footer>
+      <p>Marco Sanchez 2020</p>
+    </footer>
+  </body>
+</html>
