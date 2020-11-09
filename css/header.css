@@ -78,6 +78,7 @@
   width: 100%;
   background-color: rgb(32, 105, 241);
   opacity: 0.95;
+  top:0;
   z-index: 10;
 }
 
