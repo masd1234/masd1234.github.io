@@ -55,6 +55,8 @@
   background-color: rgb(32, 105, 241);
   border: none;
   cursor: pointer;
+  margin-right: 2rem;
+  margin-left: auto;
 }
 
 .mobileMenuItem {

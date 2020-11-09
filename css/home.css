@@ -32,14 +32,17 @@
 
 .imgCont {
   display: flex;
+  align-items: center;
   justify-content: center;
-  width: 25%;
+  width: 30%;
+  height: 100%;
 }
 
 .img {
   min-height: 100px;
   max-height: 300px;
   max-width: 100%;
+  min-width: 10%;
   border-radius: 30rem;
 }
 
@@ -59,6 +62,11 @@
   .homeCont {
     align-content: center;
   }
+
+  .imgCont {
+    width: 100%;
+    height: auto;
+  }
   .textContainter {
     font-size: 1.6rem;
     padding: 2rem;
@@ -66,8 +74,9 @@
     text-align: center;
   }
 
-  .imgCont {
-    width: 50%;
+  .img {
+    max-width: 80%;
+    height: auto;
   }
 
   .myResume {
@@ -77,6 +86,7 @@
 
 @media only screen and (max-width: 321px) {
   .homeCont {
-    height: 600px;
+    height: 720px;
   }
+ 
 }
