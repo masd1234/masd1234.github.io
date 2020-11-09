@@ -37,7 +37,8 @@
 }
 
 .img {
-  min-height: 200px;
+  min-height: 100px;
+  max-height: 300px;
   max-width: 100%;
   border-radius: 30rem;
 }
@@ -54,7 +55,7 @@
   justify-content: space-evenly;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
   .homeCont {
     align-content: center;
   }
@@ -71,5 +72,11 @@
 
   .myResume {
     font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .homeCont {
+    height: 600px;
   }
 }
