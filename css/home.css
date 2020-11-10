@@ -1,17 +1,20 @@
 .homeCont {
-  margin-top: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   height: 100%;
-  flex-wrap: wrap;
   animation-duration: 1s;
   animation-name: photoA;
   animation-timing-function: linear;
 }
 
 .textContainter {
-  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
   font-size: 2.3rem;
   color: whitesmoke;
 }
@@ -43,6 +46,7 @@
   max-height: 300px;
   max-width: 100%;
   min-width: 10%;
+  align-self: center;
   border-radius: 30rem;
 }
 
@@ -61,26 +65,28 @@
 @media only screen and (max-width: 769px) {
   .homeCont {
     align-content: center;
+    flex-wrap: wrap;
   }
 
   .imgCont {
-    width: 100%;
-    height: auto;
+    width: 90%;
+    height: 50%;
   }
   .textContainter {
     font-size: 1.6rem;
-    padding: 2rem;
-    width: 100%;
-    text-align: center;
-  }
-
-  .img {
-    max-width: 80%;
+    width: 90%;
     height: auto;
+    text-align: center;
+    align-items: center;
   }
 
   .myResume {
     font-size: 1.5rem;
+  }
+
+  .img {
+    max-width: 70%;
+    height: auto;
   }
 }
 
@@ -88,5 +94,4 @@
   .homeCont {
     height: 720px;
   }
- 
 }
