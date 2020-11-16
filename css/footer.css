@@ -1,9 +1,12 @@
 footer {
   color: whitesmoke;
-  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 2rem;
 }
 
 footer p {
-  margin-left: 1rem;
-  margin-bottom: 0.4rem;
+  flex-basis: 100%;
+  padding-left: 1rem;
 }
