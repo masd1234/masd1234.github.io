@@ -4,99 +4,86 @@
   justify-content: space-evenly;
   height: 97%;
   animation-duration: 1s;
-  animation-name: photoA;
-  animation-timing-function: linear;
-}
+  animation-name: moveFromLeft;
+  animation-timing-function: ease;
 
-.textContainter {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  width: 60%;
-  height: 100%;
-  font-size: 2.3rem;
-  color: $text-color;
-}
+  .imgCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    .img {
+      min-height: 100px;
+      max-height: 300px;
+      max-width: 100%;
+      min-width: 10%;
+      align-self: center;
+      border-radius: 30rem;
+    }
+  }
 
-.textContainter a {
-  color: $text-color;
-  text-decoration: none;
-  border-radius: 1rem;
-  border: 2px solid $text-color;
-  padding: 0.8rem;
-  box-shadow: 5px 5px 4px -2px #0000003d;
-}
+  .textContainter {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    font-size: 2.3rem;
+    color: $white-color;
+    .myResume {
+      font-size: 2rem;
+    }
+  }
 
-.textContainter a:hover {
-  background-color: $text-color;
-  color: rgb(32, 105, 241);
-  animation-name: moveUp;
-  animation-timing-function: linear;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
+  & a {
+    color: $white-color;
+    text-decoration: none;
+    border-radius: 1rem;
+    border: 2px solid $white-color;
+    padding: 0.8rem;
+    box-shadow: 5px 5px 4px -2px $shadow-color;
 
-.textContainter a:active {
-  bottom: 1px;
-  background-color: rgb(32, 105, 241);
-  color: $text-color;
-}
-
-.imgCont {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30%;
-  height: 100%;
-}
-
-.img {
-  min-height: 100px;
-  max-height: 300px;
-  max-width: 100%;
-  min-width: 10%;
-  align-self: center;
-  border-radius: 30rem;
-}
-
-.myResume {
-  font-size: 2rem;
-}
-
-.projectContainer {
-  height: 900px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
+    &:hover {
+      background-color: $white-color;
+      color: $blue-color;
+      animation-name: moveUp;
+      animation-timing-function: linear;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+    }
+    &:active {
+      bottom: 1px;
+      background-color: $blue-color;
+      color: $white-color;
+    }
+  }
 }
 
 @media only screen and (max-width: 769px) {
   .homeCont {
     align-content: center;
     flex-wrap: wrap;
-  }
+    .imgCont {
+      width: 90%;
+      height: 50%;
+      .img {
+        max-width: 70%;
+        height: auto;
+      }
+    }
+    .textContainter {
+      font-size: 1.6rem;
+      width: 90%;
+      height: auto;
+      text-align: center;
+      align-items: center;
 
-  .imgCont {
-    width: 90%;
-    height: 50%;
-  }
-  .textContainter {
-    font-size: 1.6rem;
-    width: 90%;
-    height: auto;
-    text-align: center;
-    align-items: center;
-  }
-
-  .myResume {
-    font-size: 1.5rem;
-  }
-
-  .img {
-    max-width: 70%;
-    height: auto;
+      .myResume {
+        font-size: 1.5rem;
+      }
+    }
   }
 }
 

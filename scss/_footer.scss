@@ -1,12 +1,12 @@
 footer {
-  color: whitesmoke;
+  color: $white-color;
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 2rem;
-}
 
-footer p {
-  flex-basis: 100%;
-  padding-left: 1rem;
+  & p {
+    flex-basis: 100%;
+    padding-left: 1rem;
+  }
 }

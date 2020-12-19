@@ -29,10 +29,15 @@ body {
   );
 }
 
-@keyframes photoA {
+@keyframes moveFromLeft {
   0% {
     opacity: 0;
     transform: translateX(-300px);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: translateX(10px);
   }
 
   100% {
@@ -47,7 +52,7 @@ body {
   }
 
   100% {
-    transform: translateY(2px);
+    transform: translateY(3px);
     box-shadow: 0px;
   }
 }

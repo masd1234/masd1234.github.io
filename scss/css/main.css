@@ -17,11 +17,16 @@ body {
   background: linear-gradient(86deg, #7abdfa 0%, #0075ff 48%, #036cff 100%, #0e50ff 100%, #ef4706 100%, #bdcec3 100%, #00ff55 100%, #0e91ff 100%, #00ff19 100%, #129fff 100%, #3274ff 100%);
 }
 
-@-webkit-keyframes photoA {
+@-webkit-keyframes moveFromLeft {
   0% {
     opacity: 0;
     -webkit-transform: translateX(-300px);
             transform: translateX(-300px);
+  }
+  50% {
+    opacity: 0.5;
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
   100% {
     opacity: 1;
@@ -30,11 +35,16 @@ body {
   }
 }
 
-@keyframes photoA {
+@keyframes moveFromLeft {
   0% {
     opacity: 0;
     -webkit-transform: translateX(-300px);
             transform: translateX(-300px);
+  }
+  50% {
+    opacity: 0.5;
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
   100% {
     opacity: 1;
@@ -49,8 +59,8 @@ body {
             transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(2px);
-            transform: translateY(2px);
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
     -webkit-box-shadow: 0px;
             box-shadow: 0px;
   }
@@ -62,8 +72,8 @@ body {
             transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(2px);
-            transform: translateY(2px);
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
     -webkit-box-shadow: 0px;
             box-shadow: 0px;
   }
@@ -87,12 +97,12 @@ body {
   background: linear-gradient(86deg, #7abdfa 0%, #0075ff 48%, #036cff 100%, #0e50ff 100%, #ef4706 100%, #bdcec3 100%, #00ff55 100%, #0e91ff 100%, #00ff19 100%, #129fff 100%, #3274ff 100%);
 }
 
-.logo {
+.header .logo {
   font-size: 2rem;
   color: whitesmoke;
 }
 
-.navBar {
+.header .navBar {
   font-size: 1.6rem;
   width: 40%;
   display: -webkit-box;
@@ -104,21 +114,21 @@ body {
   list-style: none;
 }
 
-.navBar li a {
+.header .navBar li a {
   color: whitesmoke;
   text-decoration: none;
   border-radius: 0.5rem;
   padding: 0.2rem 0.6rem;
 }
 
-.navBar li a:hover {
+.header .navBar li a:hover {
   background-color: whitesmoke;
-  color: #2692f7;
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
+  color: #2069f1;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
-.mobileMenu {
+.header .mobileMenu {
   display: none;
   background-color: #2069f1;
   border: none;
@@ -127,7 +137,7 @@ body {
   margin-left: auto;
 }
 
-.mobileMenuItem {
+.header .mobileMenu .mobileMenuItem {
   background-color: whitesmoke;
   height: 4px;
   width: 25px;
@@ -165,20 +175,20 @@ body {
   text-decoration: none;
   color: whitesmoke;
   font-size: 1.5rem;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   padding: 0.4rem;
 }
 
 .mobileMenuDisplayedItems li a:hover {
   background-color: whitesmoke;
-  color: #2692f7;
+  color: #2069f1;
   -webkit-transition: 1.5s;
   transition: 1.5s;
 }
 
 .buttomUndisplay {
   border: none;
-  background-color: #3275f1;
+  background-color: #2069f1;
   color: whitesmoke;
   cursor: pointer;
   font-size: 2rem;
@@ -188,20 +198,20 @@ body {
 
 .buttomUndisplay:hover {
   background-color: whitesmoke;
-  color: #2692f7;
+  color: #2069f1;
   -webkit-transition: 1.5s;
   transition: 1.5s;
 }
 
 @media only screen and (max-width: 768px) {
-  .navBar {
+  .header .logo {
+    margin-left: 0.5rem;
+  }
+  .header .navBar {
     display: none;
   }
-  .mobileMenu {
+  .header .mobileMenu {
     display: block;
-  }
-  .logo {
-    margin-left: 0.5rem;
   }
 }
 
@@ -237,13 +247,38 @@ footer p {
   height: 97%;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-name: photoA;
-          animation-name: photoA;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  -webkit-animation-name: moveFromLeft;
+          animation-name: moveFromLeft;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
-.textContainter {
+.homeCont .imgCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30%;
+  height: 100%;
+}
+
+.homeCont .imgCont .img {
+  min-height: 100px;
+  max-height: 300px;
+  max-width: 100%;
+  min-width: 10%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 30rem;
+}
+
+.homeCont .textContainter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,17 +298,21 @@ footer p {
   color: whitesmoke;
 }
 
-.textContainter a {
+.homeCont .textContainter .myResume {
+  font-size: 2rem;
+}
+
+.homeCont a {
   color: whitesmoke;
   text-decoration: none;
   border-radius: 1rem;
   border: 2px solid whitesmoke;
   padding: 0.8rem;
-  -webkit-box-shadow: 5px 5px 4px -2px #0000003d;
-          box-shadow: 5px 5px 4px -2px #0000003d;
+  -webkit-box-shadow: 5px 5px 4px -2px rgba(71, 70, 70, 0.062);
+          box-shadow: 5px 5px 4px -2px rgba(71, 70, 70, 0.062);
 }
 
-.textContainter a:hover {
+.homeCont a:hover {
   background-color: whitesmoke;
   color: #2069f1;
   -webkit-animation-name: moveUp;
@@ -286,56 +325,10 @@ footer p {
           animation-fill-mode: forwards;
 }
 
-.textContainter a:active {
+.homeCont a:active {
   bottom: 1px;
   background-color: #2069f1;
   color: whitesmoke;
-}
-
-.imgCont {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 30%;
-  height: 100%;
-}
-
-.img {
-  min-height: 100px;
-  max-height: 300px;
-  max-width: 100%;
-  min-width: 10%;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  border-radius: 30rem;
-}
-
-.myResume {
-  font-size: 2rem;
-}
-
-.projectContainer {
-  height: 900px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
 }
 
 @media only screen and (max-width: 769px) {
@@ -345,11 +338,15 @@ footer p {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .imgCont {
+  .homeCont .imgCont {
     width: 90%;
     height: 50%;
   }
-  .textContainter {
+  .homeCont .imgCont .img {
+    max-width: 70%;
+    height: auto;
+  }
+  .homeCont .textContainter {
     font-size: 1.6rem;
     width: 90%;
     height: auto;
@@ -358,12 +355,8 @@ footer p {
         -ms-flex-align: center;
             align-items: center;
   }
-  .myResume {
+  .homeCont .textContainter .myResume {
     font-size: 1.5rem;
-  }
-  .img {
-    max-width: 70%;
-    height: auto;
   }
 }
 
@@ -376,8 +369,8 @@ footer p {
 .projects {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-name: photoA;
-          animation-name: photoA;
+  -webkit-animation-name: moveFromLeft;
+          animation-name: moveFromLeft;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
 }
@@ -426,11 +419,6 @@ footer p {
   margin-left: 1rem;
 }
 
-.video {
-  width: 220px;
-  border-radius: 2rem;
-}
-
 .linkProjects {
   margin-top: 0.5rem;
   margin-left: 1rem;
@@ -440,8 +428,8 @@ footer p {
   font-size: 1.7rem;
   color: whitesmoke;
   text-decoration: none;
-  -webkit-box-shadow: 5px 5px 4px -2px #0000003d;
-          box-shadow: 5px 5px 4px -2px #0000003d;
+  -webkit-box-shadow: 5px 5px 4px -2px rgba(71, 70, 70, 0.062);
+          box-shadow: 5px 5px 4px -2px rgba(71, 70, 70, 0.062);
 }
 
 .linkProjects:hover {
@@ -476,13 +464,13 @@ footer p {
   height: auto;
 }
 
-.titleCont {
+.projectContainer .titleCont {
   color: whitesmoke;
   font-size: 4rem;
   margin-bottom: 2rem;
 }
 
-.containerMultiple {
+.projectContainer .containerMultiple {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -498,7 +486,7 @@ footer p {
   height: 100%;
 }
 
-.conIndv {
+.projectContainer .containerMultiple .conIndv {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -524,34 +512,19 @@ footer p {
   -ms-flex-negative: 1;
       flex-shrink: 1;
   border-radius: 2rem;
-  -webkit-box-shadow: 7px 8px 16px -7px rgba(0, 0, 0, 0.62);
-          box-shadow: 7px 8px 16px -7px rgba(0, 0, 0, 0.62);
+  -webkit-box-shadow: 7px 8px 16px -7px rgba(71, 70, 70, 0.062);
+          box-shadow: 7px 8px 16px -7px rgba(71, 70, 70, 0.062);
   color: #2692f7;
   font-size: 1rem;
   text-align: center;
 }
 
-.show:link {
-  -webkit-box-shadow: 5px 5px 4px -2px rgba(0, 0, 0, 0.16);
-          box-shadow: 5px 5px 4px -2px rgba(0, 0, 0, 0.16);
+.projectContainer .containerMultiple .conIndv .video {
+  width: 220px;
+  border-radius: 2rem;
 }
 
-.show:hover {
-  color: whitesmoke;
-  background-color: #2692f7;
-  -webkit-transition: 1s;
-  transition: 1s;
-  -webkit-animation-name: moveUp;
-          animation-name: moveUp;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.containerButtom {
+.projectContainer .containerMultiple .conIndv .containerButtom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -565,12 +538,32 @@ footer p {
   max-width: 200px;
 }
 
-.containerButtom a {
+.projectContainer .containerMultiple .conIndv .containerButtom .show {
   text-decoration: none;
-  color: #2692f7;
-  border: 1px #2692f7 solid;
+  color: #2069f1;
+  border: 1px #2069f1 solid;
   padding: 0.5rem;
   border-radius: 2rem;
+}
+
+.projectContainer .containerMultiple .conIndv .containerButtom .show:link {
+  -webkit-box-shadow: 5px 5px 4px -2px rgba(0, 0, 0, 0.16);
+          box-shadow: 5px 5px 4px -2px rgba(0, 0, 0, 0.16);
+}
+
+.projectContainer .containerMultiple .conIndv .containerButtom .show:hover {
+  color: whitesmoke;
+  background-color: #2069f1;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-animation-name: moveUp;
+          animation-name: moveUp;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 @media only screen and (max-width: 768px) {
@@ -647,8 +640,8 @@ footer p {
           flex-direction: column;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-name: photoA;
-          animation-name: photoA;
+  -webkit-animation-name: moveFromLeft;
+          animation-name: moveFromLeft;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
 }
@@ -656,11 +649,6 @@ footer p {
 .contactacSection h1 {
   color: whitesmoke;
   font-size: 2rem;
-}
-
-.fab,
-.fas {
-  font-size: 3.5rem;
 }
 
 .containerContactMain {
@@ -676,7 +664,7 @@ footer p {
   width: 100%;
 }
 
-.containerContact {
+.containerContactMain .containerContact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -704,22 +692,35 @@ footer p {
           box-shadow: 1px 2px 10px -1px rgba(71, 70, 70, 0.062);
 }
 
-.containerContact p {
+.containerContactMain .containerContact .fab,
+.containerContactMain .containerContact .fas {
+  font-size: 3.5rem;
+}
+
+.containerContactMain .containerContact p {
   font-size: 1.5rem;
 }
 
-.containerContact:hover {
+.containerContactMain .containerContact:hover {
   background-color: whitesmoke;
   color: #2069f1;
   -webkit-transition: 2s;
   transition: 2s;
-  border: 4px solid rgba(0, 0, 0, 0.342);
+  border: 4px solid rgba(71, 70, 70, 0.062);
 }
 
 @media only screen and (max-width: 768px) {
   .containerContactMain {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .containerContactMain .fab,
+  .containerContactMain .fas {
+    font-size: 2rem;
+  }
+  .containerContactMain .containerContact {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
   }
   .contactacSection {
     height: 1000px;

@@ -1,6 +1,6 @@
 .projects {
   animation-duration: 1s;
-  animation-name: photoA;
+  animation-name: moveFromLeft;
   animation-timing-function: linear;
 }
 
@@ -10,12 +10,12 @@
   justify-content: space-evenly;
   width: 100%;
   height: 730px;
-  color: whitesmoke;
-}
+  color: $white-color;
 
-.projects_title h1 {
-  font-size: 4.5rem;
-  text-align: center;
+  & h1 {
+    font-size: 4.5rem;
+    text-align: center;
+  }
 }
 
 .textContainerProjects {
@@ -26,41 +26,36 @@
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-}
 
-.textContainerProjects p {
-  margin-left: 1rem;
-}
-
-.video {
-  width: 220px;
-  border-radius: 2rem;
+  & p {
+    margin-left: 1rem;
+  }
 }
 
 .linkProjects {
   margin-top: 0.5rem;
   margin-left: 1rem;
   border-radius: 1rem;
-  border: solid 2px whitesmoke;
+  border: solid 2px $white-color;
   padding: 0.5rem;
   font-size: 1.7rem;
-  color: whitesmoke;
+  color: $white-color;
   text-decoration: none;
-  box-shadow: 5px 5px 4px -2px #0000003d;
-}
+  box-shadow: 5px 5px 4px -2px $shadow-color;
 
-.linkProjects:hover {
-  background-color: whitesmoke;
-  color: rgb(38, 146, 247);
-  animation-name: moveUp;
-  animation-timing-function: linear;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
+  &:hover {
+    background-color: $white-color;
+    color: rgb(38, 146, 247);
+    animation-name: moveUp;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
 
-.linkProjects:active {
-  background-color: rgb(32, 105, 241);
-  color: whitesmoke;
+  &:active {
+    background-color: $blue-color;
+    color: $white-color;
+  }
 }
 
 .projectContainer {
@@ -68,80 +63,83 @@
   align-items: center;
   flex-direction: column;
   height: auto;
-}
+  .titleCont {
+    color: $white-color;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
 
-.titleCont {
-  color: whitesmoke;
-  font-size: 4rem;
-  margin-bottom: 2rem;
-}
+  .containerMultiple {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 100%;
 
-.containerMultiple {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-content: center;
-  height: 100%;
-}
+    .conIndv {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 1%;
+      margin: 1rem;
+      background-color: $white-color;
+      height: 270px;
+      flex-basis: 23%;
+      flex-grow: 1;
+      flex-shrink: 1;
+      border-radius: 2rem;
+      box-shadow: 7px 8px 16px -7px $shadow-color;
+      color: rgb(38, 146, 247);
+      font-size: 1rem;
+      text-align: center;
 
-.conIndv {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 1%;
-  margin: 1rem;
-  background-color: whitesmoke;
-  height: 270px;
-  flex-basis: 23%;
-  flex-grow: 1;
-  flex-shrink: 1;
-  border-radius: 2rem;
-  box-shadow: 7px 8px 16px -7px rgba(0, 0, 0, 0.62);
-  color: rgb(38, 146, 247);
-  font-size: 1rem;
-  text-align: center;
-}
+      .video {
+        width: 220px;
+        border-radius: 2rem;
+      }
 
-.show:link {
-  box-shadow: 5px 5px 4px -2px rgba(0, 0, 0, 0.16);
-}
+      .containerButtom {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        min-width: 200px;
+        max-width: 200px;
 
-.show:hover {
-  color: whitesmoke;
-  background-color: rgb(38, 146, 247);
-  transition: 1s;
-  animation-name: moveUp;
-  animation-timing-function: linear;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
+        & .show {
+          text-decoration: none;
+          color: $blue-color;
+          border: 1px $blue-color solid;
+          padding: 0.5rem;
+          border-radius: 2rem;
+          &:link {
+            box-shadow: 5px 5px 4px -2px rgba(0, 0, 0, 0.16);
+          }
 
-.containerButtom {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  min-width: 200px;
-  max-width: 200px;
-}
-
-.containerButtom a {
-  text-decoration: none;
-  color: rgb(38, 146, 247);
-  border: 1px rgb(38, 146, 247) solid;
-  padding: 0.5rem;
-  border-radius: 2rem;
+          &:hover {
+            color: $white-color;
+            background-color: $blue-color;
+            transition: 1s;
+            animation-name: moveUp;
+            animation-timing-function: linear;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .projects_title {
     flex-wrap: wrap;
     align-content: center;
-  }
 
-  .projects_title h1 {
-    font-size: 3rem;
+    & h1 {
+      font-size: 3rem;
+    }
   }
 
   .textContainerProjects {
@@ -153,10 +151,10 @@
     flex-basis: 90%;
     padding: 0 1rem;
     font-size: 2rem;
-  }
 
-  .textContainerProjects p {
-    margin: 0;
+    & p {
+      margin: 0;
+    }
   }
 
   .containerButtom {
