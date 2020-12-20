@@ -3,9 +3,7 @@
   align-items: center;
   justify-content: space-evenly;
   height: 97%;
-  animation-duration: 1s;
-  animation-name: moveFromLeft;
-  animation-timing-function: ease;
+  @include animationLeftMoved;
 
   .imgCont {
     display: flex;
@@ -33,28 +31,28 @@
     font-size: 2.3rem;
     color: $white-color;
     .myResume {
-      font-size: 2rem;
+      color: $white-color;
     }
-  }
 
-  & a {
-    color: $white-color;
-    text-decoration: none;
-    border-radius: 1rem;
-    border: 2px solid $white-color;
-    padding: 0.8rem;
-    box-shadow: 5px 5px 4px -2px $shadow-color;
+    & a:link {
+      animation-timing-function: linear;
+      transform: $unhover-buttom;
+      transition: 1s;
+      font-size: 2rem;
+      text-decoration: none;
+      border-radius: 1rem;
+      border: 2px solid $white-color;
+      padding: 0.8rem;
+      box-shadow: 5px 5px 4px -2px $shadow-color;
+    }
 
-    &:hover {
+    & a:hover {
       background-color: $white-color;
       color: $blue-color;
-      animation-name: moveUp;
-      animation-timing-function: linear;
-      animation-duration: 1s;
-      animation-fill-mode: forwards;
+      transform: $hover-buttom;
     }
-    &:active {
-      bottom: 1px;
+
+    & a:active {
       background-color: $blue-color;
       color: $white-color;
     }

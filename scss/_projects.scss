@@ -1,7 +1,5 @@
 .projects {
-  animation-duration: 1s;
-  animation-name: moveFromLeft;
-  animation-timing-function: linear;
+  @include animationLeftMoved;
 }
 
 .projects_title {
@@ -33,23 +31,24 @@
 }
 
 .linkProjects {
-  margin-top: 0.5rem;
-  margin-left: 1rem;
-  border-radius: 1rem;
-  border: solid 2px $white-color;
-  padding: 0.5rem;
-  font-size: 1.7rem;
-  color: $white-color;
-  text-decoration: none;
-  box-shadow: 5px 5px 4px -2px $shadow-color;
+  &:link {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    border-radius: 1rem;
+    border: solid 2px $white-color;
+    padding: 0.5rem;
+    font-size: 1.7rem;
+    color: $white-color;
+    text-decoration: none;
+    box-shadow: 5px 5px 4px -2px $shadow-color;
+    transform: $unhover-buttom;
+    transition: 1s;
+  }
 
   &:hover {
     background-color: $white-color;
     color: rgb(38, 146, 247);
-    animation-name: moveUp;
-    animation-timing-function: linear;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+    transform: $hover-buttom;
   }
 
   &:active {
@@ -108,23 +107,27 @@
         max-width: 200px;
 
         & .show {
-          text-decoration: none;
-          color: $blue-color;
-          border: 1px $blue-color solid;
-          padding: 0.5rem;
-          border-radius: 2rem;
-          &:link {
+          &:link,
+          &:visited {
             box-shadow: 5px 5px 4px -2px rgba(0, 0, 0, 0.16);
+            transform: $unhover-buttom;
+            transition: 1s;
+            text-decoration: none;
+            color: $blue-color;
+            border: 1px $blue-color solid;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
           }
 
           &:hover {
             color: $white-color;
             background-color: $blue-color;
-            transition: 1s;
-            animation-name: moveUp;
-            animation-timing-function: linear;
-            animation-duration: 1s;
-            animation-fill-mode: forwards;
+            transform: $hover-buttom;
+          }
+
+          &:active {
+            color: $blue-color;
+            background-color: $white-color;
           }
         }
       }

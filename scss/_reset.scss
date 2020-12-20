@@ -45,14 +45,3 @@ body {
     transform: translateX(0);
   }
 }
-
-@keyframes moveUp {
-  0% {
-    transform: translateY(0);
-  }
-
-  100% {
-    transform: translateY(3px);
-    box-shadow: 0px;
-  }
-}
