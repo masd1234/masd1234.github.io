@@ -223,6 +223,7 @@ footer p {
   background-color: #2069f1;
   color: whitesmoke;
   transform: translateY(10px);
+  box-shadow: 0px 0px 0px 0px black;
 }
 
 @media only screen and (max-width: 769px) {
@@ -314,6 +315,7 @@ footer p {
 .linkProjects:active {
   background-color: #2069f1;
   color: whitesmoke;
+  box-shadow: 0px 0px 0px 0px black;
 }
 
 .projectContainer {
@@ -377,7 +379,7 @@ footer p {
   border: 1px #2069f1 solid;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  box-shadow: 1px 1px 1px 1px black;
+  box-shadow: 2px 2px 2px 1px black;
 }
 
 .projectContainer .containerMultiple .conIndv .containerButtom .show:hover {
@@ -390,6 +392,7 @@ footer p {
 .projectContainer .containerMultiple .conIndv .containerButtom .show:active {
   color: #2069f1;
   background-color: whitesmoke;
+  box-shadow: 0px 0px 0px 0px black;
 }
 
 @media only screen and (max-width: 768px) {

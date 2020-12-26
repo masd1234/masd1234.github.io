@@ -55,6 +55,7 @@
   &:active {
     background-color: $blue-color;
     color: $white-color;
+    box-shadow: $box-shadow-hover;
   }
 }
 
@@ -116,7 +117,7 @@
             border: 1px $blue-color solid;
             padding: 0.5rem;
             border-radius: 0.5rem;
-            box-shadow: 1px 1px 1px 1px black;
+            box-shadow: 2px 2px 2px 1px black;
           }
 
           &:hover {
@@ -129,6 +130,7 @@
           &:active {
             color: $blue-color;
             background-color: $white-color;
+            box-shadow: $box-shadow-hover;
           }
         }
       }
