@@ -40,15 +40,16 @@
     font-size: 1.7rem;
     color: $white-color;
     text-decoration: none;
-    box-shadow: 5px 5px 4px -2px $shadow-color;
     transform: $unhover-buttom;
     transition: 1s;
+    box-shadow: $box-shadow-link;
   }
 
   &:hover {
     background-color: $white-color;
     color: rgb(38, 146, 247);
     transform: $hover-buttom;
+    box-shadow: $box-shadow-hover;
   }
 
   &:active {
@@ -89,7 +90,6 @@
       flex-grow: 1;
       flex-shrink: 1;
       border-radius: 2rem;
-      box-shadow: 7px 8px 16px -7px $shadow-color;
       color: rgb(38, 146, 247);
       font-size: 1rem;
       text-align: center;
@@ -109,7 +109,6 @@
         & .show {
           &:link,
           &:visited {
-            box-shadow: 5px 5px 4px -2px rgba(0, 0, 0, 0.16);
             transform: $unhover-buttom;
             transition: 1s;
             text-decoration: none;
@@ -117,12 +116,14 @@
             border: 1px $blue-color solid;
             padding: 0.5rem;
             border-radius: 0.5rem;
+            box-shadow: 1px 1px 1px 1px black;
           }
 
           &:hover {
             color: $white-color;
             background-color: $blue-color;
-            transform: $hover-buttom;
+            transform: translateY(1px);
+            box-shadow: $box-shadow-hover;
           }
 
           &:active {

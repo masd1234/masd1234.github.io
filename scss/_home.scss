@@ -30,11 +30,9 @@
     height: 100%;
     font-size: 2.3rem;
     color: $white-color;
+
     .myResume {
       color: $white-color;
-    }
-
-    & a:link {
       animation-timing-function: linear;
       transform: $unhover-buttom;
       transition: 1s;
@@ -43,18 +41,20 @@
       border-radius: 1rem;
       border: 2px solid $white-color;
       padding: 0.8rem;
-      box-shadow: 5px 5px 4px -2px $shadow-color;
+      box-shadow: $box-shadow-link;
     }
 
     & a:hover {
       background-color: $white-color;
       color: $blue-color;
       transform: $hover-buttom;
+      box-shadow: $box-shadow-hover;
     }
 
     & a:active {
       background-color: $blue-color;
       color: $white-color;
+      transform: translateY(10px);
     }
   }
 }
