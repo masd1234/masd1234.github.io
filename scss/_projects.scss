@@ -32,7 +32,7 @@
 
 .linkProjects {
   &:link {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     margin-left: 1rem;
     border-radius: 1rem;
     border: solid 2px $white-color;
@@ -73,8 +73,9 @@
   .containerMultiple {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 1rem;
     align-content: center;
     height: 100%;
 
@@ -83,20 +84,20 @@
       align-items: center;
       flex-direction: column;
       justify-content: space-evenly;
-      padding: 1%;
-      margin: 1rem;
+      padding: 2rem 5%;
+      margin: 2%;
       background-color: $white-color;
-      height: 270px;
-      flex-basis: 23%;
-      flex-grow: 1;
+      height: 280px;
+      flex-basis: 22%;
       flex-shrink: 1;
-      border-radius: 2rem;
+      border-radius: 1.5rem;
       color: rgb(38, 146, 247);
       font-size: 1rem;
       text-align: center;
 
       .video {
-        width: 220px;
+        height: 110px;
+        max-width: 100%;
         border-radius: 2rem;
       }
 
@@ -139,6 +140,12 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .projectContainer {
+    .titleCont {
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
   .projects_title {
     flex-wrap: wrap;
     align-content: center;
@@ -149,15 +156,13 @@
   }
 
   .textContainerProjects {
-    display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
-    text-align: center;
     flex-basis: 90%;
     padding: 0 1rem;
     font-size: 2rem;
-
+    text-align: center;
     & p {
       margin: 0;
     }
@@ -172,16 +177,8 @@
     font-size: 1.5rem;
   }
 
-  .projectContainer {
-    height: auto;
-  }
-
   .titleCont {
     font-size: 3rem;
-  }
-
-  .conIndv {
-    padding: 3%;
   }
 }
 

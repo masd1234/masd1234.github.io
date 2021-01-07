@@ -209,21 +209,21 @@ footer p {
   border-radius: 1rem;
   border: 2px solid whitesmoke;
   padding: 0.8rem;
-  box-shadow: 1px 1px 2px 0.5px black;
+  box-shadow: 1px 1px 2px 0.5px rgba(0, 0, 0, 0.445);
 }
 
 .homeCont .textContainter a:hover {
   background-color: whitesmoke;
   color: #2069f1;
   transform: translateY(5px);
-  box-shadow: 0px 0px 0px 0px black;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.342);
 }
 
 .homeCont .textContainter a:active {
   background-color: #2069f1;
   color: whitesmoke;
   transform: translateY(10px);
-  box-shadow: 0px 0px 0px 0px black;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.342);
 }
 
 @media only screen and (max-width: 769px) {
@@ -292,7 +292,7 @@ footer p {
 }
 
 .linkProjects:link {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   margin-left: 1rem;
   border-radius: 1rem;
   border: solid 2px whitesmoke;
@@ -302,20 +302,20 @@ footer p {
   text-decoration: none;
   transform: translateY(0px);
   transition: 1s;
-  box-shadow: 1px 1px 2px 0.5px black;
+  box-shadow: 1px 1px 2px 0.5px rgba(0, 0, 0, 0.445);
 }
 
 .linkProjects:hover {
   background-color: whitesmoke;
   color: #2692f7;
   transform: translateY(5px);
-  box-shadow: 0px 0px 0px 0px black;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.342);
 }
 
 .linkProjects:active {
   background-color: #2069f1;
   color: whitesmoke;
-  box-shadow: 0px 0px 0px 0px black;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.342);
 }
 
 .projectContainer {
@@ -334,8 +334,9 @@ footer p {
 .projectContainer .containerMultiple {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  gap: 1rem;
   align-content: center;
   height: 100%;
 }
@@ -345,21 +346,21 @@ footer p {
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 1%;
-  margin: 1rem;
+  padding: 2rem 5%;
+  margin: 2%;
   background-color: whitesmoke;
-  height: 270px;
-  flex-basis: 23%;
-  flex-grow: 1;
+  height: 280px;
+  flex-basis: 22%;
   flex-shrink: 1;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   color: #2692f7;
   font-size: 1rem;
   text-align: center;
 }
 
 .projectContainer .containerMultiple .conIndv .video {
-  width: 220px;
+  height: 110px;
+  max-width: 100%;
   border-radius: 2rem;
 }
 
@@ -386,16 +387,20 @@ footer p {
   color: whitesmoke;
   background-color: #2069f1;
   transform: translateY(1px);
-  box-shadow: 0px 0px 0px 0px black;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.342);
 }
 
 .projectContainer .containerMultiple .conIndv .containerButtom .show:active {
   color: #2069f1;
   background-color: whitesmoke;
-  box-shadow: 0px 0px 0px 0px black;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.342);
 }
 
 @media only screen and (max-width: 768px) {
+  .projectContainer .titleCont {
+    font-size: 2rem;
+    text-align: center;
+  }
   .projects_title {
     flex-wrap: wrap;
     align-content: center;
@@ -404,14 +409,13 @@ footer p {
     font-size: 3rem;
   }
   .textContainerProjects {
-    display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
-    text-align: center;
     flex-basis: 90%;
     padding: 0 1rem;
     font-size: 2rem;
+    text-align: center;
   }
   .textContainerProjects p {
     margin: 0;
@@ -423,14 +427,8 @@ footer p {
     margin: 0;
     font-size: 1.5rem;
   }
-  .projectContainer {
-    height: auto;
-  }
   .titleCont {
     font-size: 3rem;
-  }
-  .conIndv {
-    padding: 3%;
   }
 }
 
@@ -470,7 +468,7 @@ footer p {
   flex-direction: column;
   border: 4px solid whitesmoke;
   height: 280px;
-  flex-basis: 280px;
+  flex-basis: 250px;
   margin: 2rem;
   border-radius: 1rem;
   text-decoration: none;
@@ -511,7 +509,7 @@ footer p {
     font-size: 2rem;
   }
   .containerContactMain .containerContact {
-    flex-basis: 80%;
+    flex-shrink: 1;
   }
   .contactacSection {
     height: 1000px;
