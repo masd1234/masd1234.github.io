@@ -281,41 +281,50 @@ footer p {
   font-size: 2.7rem;
   height: 20%;
   flex-basis: 50%;
+  gap: 1rem;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
 }
 
-.textContainerProjects p {
-  margin-left: 1rem;
+.textContainerProjects .container-scroll {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
 }
 
-.linkProjects:link {
-  margin-top: 1rem;
-  margin-left: 1rem;
+.textContainerProjects .container-scroll .linkProjects:link {
+  flex-basis: 25%;
+  flex-grow: 0.2;
+  flex-shrink: 1;
   border-radius: 1rem;
   border: solid 2px whitesmoke;
   padding: 0.5rem;
   font-size: 1.7rem;
   color: whitesmoke;
   text-decoration: none;
+  text-align: center;
   transform: translateY(0px);
   transition: 1s;
   box-shadow: 1px 1px 2px 0.5px rgba(0, 0, 0, 0.445);
 }
 
-.linkProjects:hover {
+.textContainerProjects .container-scroll .linkProjects:hover {
   background-color: whitesmoke;
   color: #2692f7;
   transform: translateY(5px);
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.342);
 }
 
-.linkProjects:active {
+.textContainerProjects .container-scroll .linkProjects:active {
   background-color: #2069f1;
   color: whitesmoke;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.342);
+}
+
+.textContainerProjects .container-scroll p {
+  margin-left: 1rem;
 }
 
 .projectContainer {
@@ -327,8 +336,12 @@ footer p {
 
 .projectContainer .titleCont {
   color: whitesmoke;
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
+}
+
+.projectContainer .js {
+  margin-bottom: 5rem;
 }
 
 .projectContainer .containerMultiple {
@@ -397,6 +410,9 @@ footer p {
 }
 
 @media only screen and (max-width: 768px) {
+  .projectContainer {
+    justify-content: center;
+  }
   .projectContainer .titleCont {
     font-size: 2rem;
     text-align: center;
@@ -406,29 +422,33 @@ footer p {
     align-content: center;
   }
   .projects_title h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .textContainerProjects {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
     flex-basis: 90%;
     padding: 0 1rem;
-    font-size: 2rem;
+    font-size: 1.4rem;
     text-align: center;
   }
   .textContainerProjects p {
     margin: 0;
   }
-  .containerButtom {
-    width: 60%;
-  }
-  .linkProjects {
+  .textContainerProjects .container-scroll {
+    justify-content: center;
+    align-items: center;
     margin: 0;
-    font-size: 1.5rem;
+    width: 100%;
   }
-  .titleCont {
-    font-size: 3rem;
+  .textContainerProjects .container-scroll .linkProjects:link {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  .containerMultiple .conIndv {
+    flex-grow: 0.6;
   }
 }
 

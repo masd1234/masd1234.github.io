@@ -20,42 +20,50 @@
   font-size: 2.7rem;
   height: 20%;
   flex-basis: 50%;
+  gap: 1rem;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
 
-  & p {
-    margin-left: 1rem;
-  }
-}
+  .container-scroll {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    .linkProjects {
+      &:link {
+        flex-basis: 25%;
+        flex-grow: 0.2;
+        flex-shrink: 1;
+        border-radius: 1rem;
+        border: solid 2px $white-color;
+        padding: 0.5rem;
+        font-size: 1.7rem;
+        color: $white-color;
+        text-decoration: none;
+        text-align: center;
+        transform: $unhover-buttom;
+        transition: 1s;
+        box-shadow: $box-shadow-link;
+      }
 
-.linkProjects {
-  &:link {
-    margin-top: 1rem;
-    margin-left: 1rem;
-    border-radius: 1rem;
-    border: solid 2px $white-color;
-    padding: 0.5rem;
-    font-size: 1.7rem;
-    color: $white-color;
-    text-decoration: none;
-    transform: $unhover-buttom;
-    transition: 1s;
-    box-shadow: $box-shadow-link;
-  }
+      &:hover {
+        background-color: $white-color;
+        color: rgb(38, 146, 247);
+        transform: $hover-buttom;
+        box-shadow: $box-shadow-hover;
+      }
 
-  &:hover {
-    background-color: $white-color;
-    color: rgb(38, 146, 247);
-    transform: $hover-buttom;
-    box-shadow: $box-shadow-hover;
-  }
+      &:active {
+        background-color: $blue-color;
+        color: $white-color;
+        box-shadow: $box-shadow-hover;
+      }
+    }
 
-  &:active {
-    background-color: $blue-color;
-    color: $white-color;
-    box-shadow: $box-shadow-hover;
+    & p {
+      margin-left: 1rem;
+    }
   }
 }
 
@@ -66,8 +74,12 @@
   height: auto;
   .titleCont {
     color: $white-color;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 2rem;
+  }
+
+  .js {
+    margin-bottom: 5rem;
   }
 
   .containerMultiple {
@@ -141,6 +153,7 @@
 
 @media only screen and (max-width: 768px) {
   .projectContainer {
+    justify-content: center;
     .titleCont {
       font-size: 2rem;
       text-align: center;
@@ -151,7 +164,7 @@
     align-content: center;
 
     & h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
   }
 
@@ -159,26 +172,33 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
     flex-basis: 90%;
     padding: 0 1rem;
-    font-size: 2rem;
+    font-size: 1.4rem;
     text-align: center;
     & p {
       margin: 0;
     }
+
+    .container-scroll {
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      width: 100%;
+      .linkProjects {
+        &:link {
+          margin: 0;
+          font-size: 1.1rem;
+        }
+      }
+    }
   }
 
-  .containerButtom {
-    width: 60%;
-  }
-
-  .linkProjects {
-    margin: 0;
-    font-size: 1.5rem;
-  }
-
-  .titleCont {
-    font-size: 3rem;
+  .containerMultiple {
+    .conIndv {
+      flex-grow: 0.6;
+    }
   }
 }
 
