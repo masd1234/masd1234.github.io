@@ -34,6 +34,15 @@ const arrayContainerJs = [
   },
 
   {
+    titleProject: "Dog Finder",
+    titleDescription:
+      "Find your favorite dog using this app: Html,Cssand JavaScript fetch API.",
+    img: "../resources/dog.gif",
+    showProject: "https://masd1234.github.io/dogFinder/",
+    showSourceCode: "https://github.com/masd1234/dogFinder/settings",
+  },
+
+  {
     titleProject: "Number Guesser",
     titleDescription:
       "This project is a game created with HTML, CSS and JavaScript.",

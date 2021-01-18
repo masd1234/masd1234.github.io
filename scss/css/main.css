@@ -209,21 +209,21 @@ footer p {
   border-radius: 1rem;
   border: 2px solid whitesmoke;
   padding: 0.8rem;
-  box-shadow: 1px 1px 2px 0.5px rgba(0, 0, 0, 0.445);
+  box-shadow: 1px 1px 2px 0.5px rgba(0, 0, 0, 0.438);
 }
 
 .homeCont .textContainter a:hover {
   background-color: whitesmoke;
   color: #2069f1;
   transform: translateY(5px);
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.342);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.089);
 }
 
 .homeCont .textContainter a:active {
   background-color: #2069f1;
   color: whitesmoke;
   transform: translateY(10px);
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.342);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.089);
 }
 
 @media only screen and (max-width: 769px) {
@@ -308,20 +308,20 @@ footer p {
   text-align: center;
   transform: translateY(0px);
   transition: 1s;
-  box-shadow: 1px 1px 2px 0.5px rgba(0, 0, 0, 0.445);
+  box-shadow: 1px 1px 2px 0.5px rgba(0, 0, 0, 0.438);
 }
 
 .textContainerProjects .container-scroll .linkProjects:hover {
   background-color: whitesmoke;
   color: #2692f7;
   transform: translateY(5px);
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.342);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.089);
 }
 
 .textContainerProjects .container-scroll .linkProjects:active {
   background-color: #2069f1;
   color: whitesmoke;
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.342);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.089);
 }
 
 .textContainerProjects .container-scroll p {
@@ -394,20 +394,20 @@ footer p {
   border: 1px #2069f1 solid;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  box-shadow: 1px 1px 1px 0.5px black;
+  box-shadow: 1px 1px 2px 0.5px rgba(0, 0, 0, 0.438);
 }
 
 .projectContainer .containerMultiple .conIndv .containerButtom .show:hover {
   color: whitesmoke;
   background-color: #2069f1;
   transform: translateY(1px);
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.342);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.089);
 }
 
 .projectContainer .containerMultiple .conIndv .containerButtom .show:active {
   color: #2069f1;
   background-color: whitesmoke;
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.342);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.089);
 }
 
 @media only screen and (max-width: 768px) {

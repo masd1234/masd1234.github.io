@@ -130,7 +130,7 @@
             border: 1px $blue-color solid;
             padding: 0.5rem;
             border-radius: 0.5rem;
-            box-shadow: 1px 1px 1px 0.5px black;
+            box-shadow: $box-shadow-link;
           }
 
           &:hover {
