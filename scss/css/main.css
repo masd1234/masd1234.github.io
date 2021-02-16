@@ -32,6 +32,7 @@ body {
 }
 
 .header {
+  z-index: 10;
   width: 100%;
   position: fixed;
   display: flex;
@@ -149,6 +150,8 @@ body {
 }
 
 footer {
+  padding: 1rem 0;
+  margin: 1rem 0;
   color: whitesmoke;
   display: flex;
   align-items: center;
@@ -353,6 +356,7 @@ footer p {
   gap: 1rem;
   align-content: center;
   height: 100%;
+  width: 100%;
 }
 
 .projectContainer .containerMultiple .conIndv {
@@ -360,7 +364,6 @@ footer p {
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 2rem 5%;
   margin: 2%;
   background-color: whitesmoke;
   height: 280px;
@@ -370,6 +373,7 @@ footer p {
   color: #2692f7;
   font-size: 1rem;
   text-align: center;
+  border: 1px black double;
 }
 
 .projectContainer .containerMultiple .conIndv .video {
@@ -459,6 +463,60 @@ footer p {
   }
 }
 
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  height: 280px;
+  flex-basis: 25rem;
+  flex-shrink: 1;
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: #2692f7;
+}
+
+/* Style the back side */
+.flip-card-back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  transform: rotateY(180deg);
+}
+
 .contactacSection {
   height: 100%;
   display: flex;
@@ -519,6 +577,14 @@ footer p {
   background-color: #2069f1;
   color: whitesmoke;
   transform: translateY(10px);
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 60rem;
 }
 
 @media only screen and (max-width: 768px) {

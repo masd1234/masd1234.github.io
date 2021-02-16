@@ -117,29 +117,43 @@ const arrayContainerReact = [
 ];
 
 const containerReturnedJs = arrayContainerJs.map((item) => {
-  console.log(item);
-  let containerIdividual = `<div class="conIndv">
+  let containerIdividual = `
+  <div class="flip-card">
+  <div class="conIndv flip-card-inner">
+  <div class="flip-card-front">
   <h2>${item.titleProject}</h2>
   <p>${item.titleDescription}</p>
+  </div>
+  <div class="flip-card-back">
+  <h2>${item.titleProject}</h2>
   <img src=${item.img} class="video" autoplay ></img>
   <div class="containerButtom">
   <a class="show" href=${item.showProject} target="_blank">Live Project</a>
   <a class="show" href=${item.showSourceCode} target="_blank">Source Code</a>
   </div>
+  </div>
+  </div>
   </div>`;
-  console.log(item);
 
   return containerIdividual;
 });
 
 const containerReturnedReact = arrayContainerReact.map((item) => {
-  let containerIdividualReact = `<div class="conIndv">
+  let containerIdividualReact = `
+  <div class="flip-card">
+  <div class="conIndv flip-card-inner">
+  <div class="flip-card-front">
   <h2>${item.titleProject}</h2>
   <p>${item.titleDescription}</p>
+  </div>
+  <div class="flip-card-back">
+  <h2>${item.titleProject}</h2>
   <img src=${item.img} class="video" autoplay ></img>
   <div class="containerButtom">
   <a class="show" href=${item.showProject} target="_blank">Live Project</a>
   <a class="show" href=${item.showSourceCode} target="_blank">Source Code</a>
+  </div>
+  </div>
   </div>
   </div>`;
 

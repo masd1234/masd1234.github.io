@@ -58,6 +58,14 @@
   }
 }
 
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 60rem;
+}
+
 @media only screen and (max-width: 768px) {
   .containerContactMain {
     flex-wrap: wrap;
@@ -67,7 +75,6 @@
       font-size: 2rem;
     }
     .containerContact {
-   
       flex-shrink: 1;
     }
   }
