@@ -63,12 +63,12 @@ body {
   text-decoration: none;
   border-radius: 0.5rem;
   padding: 0.2rem 0.6rem;
+  transition: 1s;
 }
 
 .header .navBar li a:hover {
   background-color: whitesmoke;
   color: #2069f1;
-  transition: 1s;
 }
 
 .header .mobileMenu {
@@ -150,13 +150,14 @@ body {
 }
 
 footer {
-  padding: 1rem 0;
-  margin: 1rem 0;
   color: whitesmoke;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 2rem;
+  height: 3rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 footer p {
@@ -335,7 +336,7 @@ footer p {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: auto;
+  height: 100%;
 }
 
 .projectContainer .titleCont {
@@ -355,8 +356,9 @@ footer p {
   flex-wrap: wrap;
   gap: 1rem;
   align-content: center;
-  height: 100%;
+  height: 50%;
   width: 100%;
+  padding: 3rem;
 }
 
 .projectContainer .containerMultiple .conIndv {

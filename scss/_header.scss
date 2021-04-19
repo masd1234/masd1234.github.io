@@ -41,11 +41,11 @@
       text-decoration: none;
       border-radius: 0.5rem;
       padding: 0.2rem 0.6rem;
+      transition: 1s;
 
       &:hover {
         background-color: $white-color;
         color: $blue-color;
-        transition: 1s;
       }
     }
   }

@@ -1,11 +1,12 @@
 footer {
-  padding: 1rem 0;
-  margin: 1rem 0;
   color: $white-color;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 2rem;
+  height: 3rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 
   & p {
     flex-basis: 100%;
