@@ -1,3 +1,4 @@
+/* mobile navbar display and undisplay */
 const mobileButtom = document.querySelector(".mobileMenu");
 const mobileHidde = document.querySelector(".mobileMenuDisplayedItems");
 const buttomX = document.querySelector(".buttomUndisplay");
@@ -162,3 +163,31 @@ const containerReturnedReact = arrayContainerReact.map((item) => {
 
 parentContainerProjectsJs.innerHTML = containerReturnedJs.join(" ");
 parentContainerProjectsReact.innerHTML = containerReturnedReact.join(" ");
+
+/*scroll animations for project section*/
+
+const faders = document.querySelectorAll(".containerMultiple");
+const apperarOptions = {
+  threshold: 0,
+  rootMargin: "0px 0px -200px 0px",
+};
+const appearsOnScroll = new IntersectionObserver(function (
+  entries,
+  appearsOnScroll
+) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      console.log(entry.target);
+      entry.target.classList.remove("fade-out");
+      entry.target.classList.add("fade-in-appear");
+      appearsOnScroll.unobserve(entry.target);
+    }
+  });
+},
+apperarOptions);
+
+faders.forEach((fader) => {
+  appearsOnScroll.observe(fader);
+});

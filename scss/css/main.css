@@ -349,6 +349,15 @@ footer p {
   margin-bottom: 5rem;
 }
 
+.projectContainer .fade-out {
+  opacity: 0;
+}
+
+.projectContainer .fade-in-appear {
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+
 .projectContainer .containerMultiple {
   display: flex;
   align-items: center;

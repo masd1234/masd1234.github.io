@@ -83,6 +83,15 @@
     margin-bottom: 5rem;
   }
 
+  .fade-out {
+    opacity: 0;
+  }
+
+  .fade-in-appear {
+    opacity: 1;
+    transition: opacity 1s linear;
+  }
+
   .containerMultiple {
     display: flex;
     align-items: center;
