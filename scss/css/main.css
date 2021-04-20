@@ -150,14 +150,14 @@ body {
 }
 
 footer {
-  color: whitesmoke;
+  color: #2069f1;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 3rem;
-  position: absolute;
-  bottom: 0;
+  height: 7rem;
+  font-size: 1rem;
   width: 100%;
+  background-color: whitesmoke;
 }
 
 footer p {
@@ -169,7 +169,7 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 97%;
+  height: 80rem;
   animation-duration: 2s;
   animation-name: moveFromLeft;
   animation-timing-function: linear;
@@ -266,6 +266,7 @@ footer p {
   animation-duration: 2s;
   animation-name: moveFromLeft;
   animation-timing-function: linear;
+  overflow: hidden;
 }
 
 .projects_title {
@@ -337,6 +338,7 @@ footer p {
   align-items: center;
   flex-direction: column;
   height: 100%;
+  margin-bottom: 10rem;
 }
 
 .projectContainer .titleCont {
@@ -532,7 +534,7 @@ footer p {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-direction: column;
   animation-duration: 2s;
   animation-name: moveFromLeft;
@@ -608,9 +610,6 @@ footer p {
   }
   .containerContactMain .containerContact {
     flex-shrink: 1;
-  }
-  .contactacSection {
-    height: 1000px;
   }
 }
 /*# sourceMappingURL=main.css.map */

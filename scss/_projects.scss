@@ -1,5 +1,6 @@
 .projects {
   @include animationLeftMoved;
+  overflow: hidden;
 }
 
 .projects_title {
@@ -72,6 +73,7 @@
   align-items: center;
   flex-direction: column;
   height: 100%;
+  margin-bottom: 10rem;
 
   .titleCont {
     color: $white-color;

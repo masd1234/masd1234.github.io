@@ -1,12 +1,12 @@
 footer {
-  color: $white-color;
+  color: $blue-color;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 3rem;
-  position: absolute;
-  bottom: 0;
+  height: 7rem;
+  font-size: 1rem;
   width: 100%;
+  background-color: $white-color;
 
   & p {
     flex-basis: 100%;
