@@ -9,7 +9,6 @@ const displayMenu = () => {
 };
 
 const undisplayMenu = () => {
-  mobileHidde.style.display = "none";
   mobileHidde.style.transform = "translateX(-100%)";
 };
 
