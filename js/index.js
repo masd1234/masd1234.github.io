@@ -4,7 +4,6 @@ const mobileHidde = document.querySelector(".mobileMenuDisplayedItems");
 const buttomX = document.querySelector(".buttomUndisplay");
 
 const displayMenu = () => {
-  mobileHidde.style.display = "flex";
   mobileHidde.style.opacity = "0.95";
   mobileHidde.style.transform = "translateX(0%)";
 };

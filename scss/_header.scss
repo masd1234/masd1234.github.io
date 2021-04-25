@@ -71,8 +71,9 @@
 
 .mobileMenuDisplayedItems {
   position: fixed;
-  opacity: 0;
+  opacity: 1;
   transform: translateX(-100%);
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
