@@ -91,7 +91,7 @@ body {
 
 .mobileMenuDisplayedItems {
   position: fixed;
-  overflow-x: hidden;
+  display: none;
   opacity: 0;
   transform: translateX(-100%);
   justify-content: space-evenly;
