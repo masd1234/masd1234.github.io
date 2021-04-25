@@ -73,16 +73,16 @@
   position: fixed;
   overflow-x: hidden;
   transform: translateX(-100%);
-  transition: 0.8s;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   height: 100%;
   width: 100%;
   background-color: $blue-color;
-  opacity: 0.95;
   top: 0;
   z-index: 10;
+  opacity: 0;
+  transition: 0.8s;
 
   & li {
     list-style: none;
