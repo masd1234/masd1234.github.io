@@ -58,6 +58,26 @@
     margin-right: 2rem;
     margin-left: auto;
 
+    #one,
+    #two,
+    #three {
+      transition: 1s;
+    }
+
+    .line-one {
+      transform: rotate(38.5deg) translateY(5px);
+      transition: 1s;
+    }
+
+    .line-two {
+      display: none;
+    }
+
+    .line-three {
+      transform: rotate(-38.5deg) translateY(-5px);
+      transition: 1s;
+    }
+
     .mobileMenuItem {
       background-color: $white-color;
       height: 4px;
@@ -72,6 +92,7 @@
 .mobileMenuDisplayedItems {
   position: fixed;
   transform: translateX(-100%);
+  overflow-x: hidden;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -80,7 +101,7 @@
   width: 100%;
   background-color: $blue-color;
   transition: 1s;
-  z-index: -1;
+  z-index: 1;
 
   & li {
     list-style: none;
@@ -115,6 +136,12 @@
     color: $blue-color;
     transition: 1.5s;
   }
+}
+
+.displayMenu {
+  opacity: 0.95;
+  z-index: 1;
+  transform: translateX(0%);
 }
 
 @media only screen and (max-width: 768px) {

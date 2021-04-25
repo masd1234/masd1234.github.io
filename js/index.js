@@ -2,18 +2,18 @@
 const mobileButtom = document.querySelector(".mobileMenu");
 const mobileHidde = document.querySelector(".mobileMenuDisplayedItems");
 const buttomX = document.querySelector(".buttomUndisplay");
+const lineOne = document.getElementById("one");
+const lineTwo = document.getElementById("two");
+const lineThree = document.getElementById("three");
 
 const displayMenu = () => {
-  mobileHidde.style.opacity = "0.95";
-  mobileHidde.style["z-index"] = "1";
-  mobileHidde.style.transform = "translateX(0%)";
+  lineOne.classList.toggle("line-one");
+  lineTwo.classList.toggle("line-two");
+  lineThree.classList.toggle("line-three");
+  mobileHidde.classList.toggle("displayMenu");
 };
 
-const undisplayMenu = () => {
-  mobileHidde.style.opacity = "0";
-  mobileHidde.style["z-index"] = "-1";
-  mobileHidde.style.transform = "translateX(-100%)";
-};
+mobileButtom.onclick = displayMenu;
 
 document.querySelectorAll(".linkProjects").forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
