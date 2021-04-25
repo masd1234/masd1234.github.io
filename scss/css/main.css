@@ -92,6 +92,7 @@ body {
 .mobileMenuDisplayedItems {
   position: fixed;
   overflow-x: hidden;
+  opacity: 0;
   transform: translateX(-100%);
   justify-content: space-evenly;
   align-items: center;
@@ -99,10 +100,9 @@ body {
   height: 100%;
   width: 100%;
   background-color: #2069f1;
-  opacity: 0.95;
   top: 0;
   z-index: 10;
-  transition: 0.8s;
+  transition: 1s;
 }
 
 .mobileMenuDisplayedItems li {

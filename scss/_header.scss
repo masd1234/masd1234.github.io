@@ -72,6 +72,7 @@
 .mobileMenuDisplayedItems {
   position: fixed;
   overflow-x: hidden;
+  opacity: 0;
   transform: translateX(-100%);
   justify-content: space-evenly;
   align-items: center;
@@ -81,8 +82,7 @@
   background-color: $blue-color;
   top: 0;
   z-index: 10;
-  opacity: 0;
-  transition: 0.8s;
+  transition: 1s;
 
   & li {
     list-style: none;
