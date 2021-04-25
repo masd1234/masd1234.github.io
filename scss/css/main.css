@@ -531,9 +531,10 @@ footer p {
 }
 
 .contactacSection {
-  height: 100%;
+  height: 70rem;
   display: flex;
   align-items: center;
+  align-content: center;
   justify-content: center;
   flex-direction: column;
   animation-duration: 2s;
@@ -559,8 +560,8 @@ footer p {
   justify-content: space-evenly;
   flex-direction: column;
   border: 4px solid whitesmoke;
-  height: 280px;
-  flex-basis: 250px;
+  height: 30rem;
+  flex-basis: 25rem;
   margin: 2rem;
   border-radius: 1rem;
   text-decoration: none;
@@ -592,24 +593,17 @@ footer p {
   transform: translateY(10px);
 }
 
-.form-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 60rem;
-}
-
 @media only screen and (max-width: 768px) {
+  .contactacSection {
+    height: 130rem;
+  }
   .containerContactMain {
     flex-wrap: wrap;
+    margin: 1rem 0;
   }
   .containerContactMain .fab,
   .containerContactMain .fas {
     font-size: 2rem;
-  }
-  .containerContactMain .containerContact {
-    flex-shrink: 1;
   }
 }
 /*# sourceMappingURL=main.css.map */
