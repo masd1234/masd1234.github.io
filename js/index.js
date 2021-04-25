@@ -4,11 +4,11 @@ const mobileHidde = document.querySelector(".mobileMenuDisplayedItems");
 const buttomX = document.querySelector(".buttomUndisplay");
 
 const displayMenu = () => {
-  mobileHidde.style.display = "flex";
+  mobileHidde.style.transform = "translateX(0%)";
 };
 
 const undisplayMenu = () => {
-  mobileHidde.style.display = "none";
+  mobileHidde.style.transform = "translateX(-100%)";
 };
 
 document.querySelectorAll(".linkProjects").forEach((anchor) => {

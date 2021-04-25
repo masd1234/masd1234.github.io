@@ -91,7 +91,9 @@ body {
 
 .mobileMenuDisplayedItems {
   position: fixed;
-  display: none;
+  display: flex;
+  transform: translateX(-100%);
+  transition: 1s;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
