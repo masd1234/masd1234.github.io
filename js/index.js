@@ -10,6 +10,7 @@ const displayMenu = () => {
 };
 
 const undisplayMenu = () => {
+  mobileHidde.style.opacity = "0";
   mobileHidde.style.transform = "translateX(-100%)";
 };
 
