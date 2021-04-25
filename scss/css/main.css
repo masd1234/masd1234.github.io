@@ -91,7 +91,6 @@ body {
 
 .mobileMenuDisplayedItems {
   position: fixed;
-  opacity: 1;
   transform: translateX(-100%);
   display: flex;
   justify-content: space-evenly;
@@ -100,9 +99,8 @@ body {
   height: 100%;
   width: 100%;
   background-color: #2069f1;
-  top: 0;
-  z-index: 10;
   transition: 1s;
+  z-index: -1;
 }
 
 .mobileMenuDisplayedItems li {

@@ -5,11 +5,13 @@ const buttomX = document.querySelector(".buttomUndisplay");
 
 const displayMenu = () => {
   mobileHidde.style.opacity = "0.95";
+  mobileHidde.style["z-index"] = "1";
   mobileHidde.style.transform = "translateX(0%)";
 };
 
 const undisplayMenu = () => {
   mobileHidde.style.opacity = "0";
+  mobileHidde.style["z-index"] = "-1";
   mobileHidde.style.transform = "translateX(-100%)";
 };
 
