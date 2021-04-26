@@ -57,6 +57,7 @@
     cursor: pointer;
     margin-right: 2rem;
     margin-left: auto;
+    position: relative;
 
     #one,
     #two,
@@ -65,16 +66,16 @@
     }
 
     .line-one {
-      transform: rotate(38.5deg) translateY(5px);
+      transform: rotate(45deg) translate(5.1px, 5.1px);
       transition: 1s;
     }
 
     .line-two {
-      display: none;
+      opacity: 0;
     }
 
     .line-three {
-      transform: rotate(-38.5deg) translateY(-5px);
+      transform: rotate(-45deg) translate(6.1px, -6.1px);
       transition: 1s;
     }
 

@@ -92,6 +92,8 @@
   .fade-in-appear {
     opacity: 1;
     transition: opacity 1s linear;
+    transform: translateY(-35px);
+    transition: 1s;
   }
 
   .containerMultiple {

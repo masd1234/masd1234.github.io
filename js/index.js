@@ -123,7 +123,7 @@ const arrayContainerReact = [
 
 const containerReturnedJs = arrayContainerJs.map((item) => {
   let containerIdividual = `
-  <div class="flip-card">
+  <div class="flip-card fade-out">
   <div class="conIndv flip-card-inner">
   <div class="flip-card-front">
   <h2>${item.titleProject}</h2>
@@ -145,7 +145,7 @@ const containerReturnedJs = arrayContainerJs.map((item) => {
 
 const containerReturnedReact = arrayContainerReact.map((item) => {
   let containerIdividualReact = `
-  <div class="flip-card">
+  <div class="flip-card fade-out">
   <div class="conIndv flip-card-inner">
   <div class="flip-card-front">
   <h2>${item.titleProject}</h2>
@@ -170,10 +170,10 @@ parentContainerProjectsReact.innerHTML = containerReturnedReact.join(" ");
 
 /*scroll animations for project section*/
 
-const faders = document.querySelectorAll(".containerMultiple");
+const faders = document.querySelectorAll(".flip-card");
 const apperarOptions = {
   threshold: 0,
-  rootMargin: "0px 0px -200px 0px",
+  rootMargin: "0px 0px -250px 0px",
 };
 const appearsOnScroll = new IntersectionObserver(function (
   entries,
