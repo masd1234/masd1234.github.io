@@ -33,7 +33,7 @@
       <li><a href="./projects.html">Projects</a></li>
       <li><a href="./contact.html">Contact</a></li>
     </ul>
-    <section class="contactacSection">
+    <section class="contac-Section">
       <h1>Let us get in touch:</h1>
       <div class="containerContactMain">
         <a class="containerContact" href="mailto: masd_123@hotmail.com">
@@ -57,6 +57,25 @@
           <p>GitHub</p>
         </a>
       </div>
+    </section>
+    <section class="form-container">
+      <form class="form" action="/contact-submit" method="POST">
+        <label class="label" for="name">Name:</label>
+        <input class="input" id="name" type="text" name="name" />
+        <label class="label" for="last-name">Last Name:</label>
+        <input class="input" id="last-name" type="text" name="lastname" />
+        <label class="label" for="email">Email:</label>
+        <input class="input" id="email" type="text" name="email" />
+        <label class="label" for="message">Your message:</label>
+        <textarea
+          class="input"
+          id="message"
+          name="message"
+          rows="4"
+          cols="50"
+        ></textarea>
+        <input class="submit-buttom" type="submit" />
+      </form>
     </section>
 
     <footer>

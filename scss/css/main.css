@@ -561,7 +561,7 @@ footer p {
   transform: rotateY(180deg);
 }
 
-.contactacSection {
+.contac-Section {
   height: 70rem;
   display: flex;
   align-items: center;
@@ -573,7 +573,7 @@ footer p {
   animation-timing-function: linear;
 }
 
-.contactacSection h1 {
+.contac-Section h1 {
   color: whitesmoke;
   font-size: 2rem;
 }
@@ -624,8 +624,40 @@ footer p {
   transform: translateY(10px);
 }
 
+.form-container {
+  height: 50rem;
+  margin-bottom: 10rem;
+}
+
+.form {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.label {
+  color: whitesmoke;
+  font-size: 1.5rem;
+}
+
+.input {
+  border: none;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.submit-buttom {
+  border: none;
+  color: #2069f1;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
 @media only screen and (max-width: 768px) {
-  .contactacSection {
+  .contac-Section {
     height: 130rem;
   }
   .containerContactMain {
