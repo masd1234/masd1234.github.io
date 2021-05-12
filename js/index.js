@@ -83,15 +83,6 @@ const arrayContainerJs = [
   },
 
   {
-    titleProject: "Mundostar",
-    titleDescription:
-      "A responsive website built with Html, Css and JavaScript.",
-    img: "../resources/ms.gif",
-    showProject: "https://masd1234.github.io/mundostar/",
-    showSourceCode: "https://github.com/masd1234/mundostar",
-  },
-
-  {
     titleProject: "T+C",
     titleDescription:
       "A responsive website built with Html, Css and JavaScript.",
@@ -102,6 +93,14 @@ const arrayContainerJs = [
 ];
 
 const arrayContainerReact = [
+  {
+    titleProject: "Mundostar",
+    titleDescription:
+      "A responsive website built with Html, Css and JavaScript.",
+    img: "../resources/ms.gif",
+    showProject: "https://masd1234.github.io/MundostarReact/#/",
+    showSourceCode: "https://github.com/masd1234/MundostarReact",
+  },
   {
     titleProject: "Casupo",
     titleDescription:
