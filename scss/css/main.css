@@ -183,7 +183,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 7rem;
+  height: 5rem;
   font-size: 1rem;
   width: 100%;
   background-color: whitesmoke;
@@ -242,13 +242,13 @@ footer p {
   border-radius: 1rem;
   border: 2px solid whitesmoke;
   padding: 0.8rem;
-  box-shadow: 1px 1px 2px 0.5px rgba(0, 0, 0, 0.438);
+  box-shadow: 1px 1px 2px 0.5px rgba(0, 0, 0, 0.205);
 }
 
 .homeCont .textContainter a:hover {
   background-color: whitesmoke;
   color: #2069f1;
-  transform: translateY(5px);
+  transform: translateY(-5px);
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.089);
 }
 
@@ -342,13 +342,13 @@ footer p {
   text-align: center;
   transform: translateY(0px);
   transition: 1s;
-  box-shadow: 1px 1px 2px 0.5px rgba(0, 0, 0, 0.438);
+  box-shadow: 1px 1px 2px 0.5px rgba(0, 0, 0, 0.205);
 }
 
 .textContainerProjects .container-scroll .linkProjects:hover {
   background-color: whitesmoke;
   color: #2692f7;
-  transform: translateY(5px);
+  transform: translateY(-5px);
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.089);
 }
 
@@ -404,32 +404,27 @@ footer p {
 }
 
 .projectContainer .containerMultiple .conIndv {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-evenly;
-  margin: 2%;
-  background-color: whitesmoke;
+  position: relative;
+  background-image: linear-gradient(180deg, white, #dfdfdf);
   height: 280px;
-  flex-basis: 22%;
-  flex-shrink: 1;
+  flex-basis: 20%;
   border-radius: 1.5rem;
   color: #2692f7;
-  font-size: 1rem;
   text-align: center;
-  border: 1px black double;
 }
 
 .projectContainer .containerMultiple .conIndv .video {
-  height: 110px;
-  max-width: 100%;
-  border-radius: 2rem;
+  border-radius: 1.5rem 1.5rem 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 11rem;
+  width: 100%;
 }
 
 .projectContainer .containerMultiple .conIndv .containerButtom {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  position: absolute;
+  top: 22rem;
   min-width: 200px;
   max-width: 200px;
 }
@@ -439,16 +434,18 @@ footer p {
   transition: 1s;
   text-decoration: none;
   color: #2069f1;
-  border: 1px #2069f1 solid;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  box-shadow: 1px 1px 2px 0.5px rgba(0, 0, 0, 0.438);
+  margin: 0 0.5rem;
+  box-shadow: 1px 1px 2px 0.5px rgba(0, 0, 0, 0.205);
+  transition: 1s;
+  display: inline-block;
 }
 
 .projectContainer .containerMultiple .conIndv .containerButtom .show:hover {
   color: whitesmoke;
   background-color: #2069f1;
-  transform: translateY(1px);
+  transform: translateY(-1px);
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.089);
 }
 
@@ -507,7 +504,10 @@ footer p {
   }
 }
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+/* The flip card container - set the width and height to whatever 
+you want. We have added the border property to demonstrate that the 
+flip itself goes out of the box on hover (remove perspective if you 
+don't want the 3D effect */
 .flip-card {
   background-color: transparent;
   height: 280px;
@@ -524,6 +524,7 @@ footer p {
   height: 100%;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  box-shadow: 1px 1px 2px 0.5px rgba(0, 0, 0, 0.205);
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */

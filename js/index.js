@@ -64,7 +64,7 @@ const arrayContainerJs = [
     showProject: "https://masd1234.github.io/budget/",
     showSourceCode: "https://github.com/masd1234/budget",
   },
-
+  /*
   {
     titleProject: "Colomar",
     titleDescription: "A responsive website built with Html and Css.",
@@ -72,7 +72,7 @@ const arrayContainerJs = [
     showProject: "https://masd1234.github.io/colmar/",
     showSourceCode: "https://github.com/masd1234/colmar",
   },
-
+*/
   {
     titleProject: "Vu",
     titleDescription:
@@ -95,8 +95,7 @@ const arrayContainerJs = [
 const arrayContainerReact = [
   {
     titleProject: "Mundostar",
-    titleDescription:
-      "A responsive website built with Html, Css and JavaScript.",
+    titleDescription: "A responsive website built with React.",
     img: "../resources/ms.gif",
     showProject: "https://masd1234.github.io/MundostarReact/#/",
     showSourceCode: "https://github.com/masd1234/MundostarReact",
@@ -129,8 +128,8 @@ const containerReturnedJs = arrayContainerJs.map((item) => {
   <p>${item.titleDescription}</p>
   </div>
   <div class="flip-card-back">
-  <h2>${item.titleProject}</h2>
   <img src=${item.img} class="video" autoplay ></img>
+  <h2>${item.titleProject}</h2>
   <div class="containerButtom">
   <a class="show" href=${item.showProject} target="_blank">Live Project</a>
   <a class="show" href=${item.showSourceCode} target="_blank">Source Code</a>
@@ -151,8 +150,8 @@ const containerReturnedReact = arrayContainerReact.map((item) => {
   <p>${item.titleDescription}</p>
   </div>
   <div class="flip-card-back">
-  <h2>${item.titleProject}</h2>
   <img src=${item.img} class="video" autoplay ></img>
+  <h2>${item.titleProject}</h2>
   <div class="containerButtom">
   <a class="show" href=${item.showProject} target="_blank">Live Project</a>
   <a class="show" href=${item.showSourceCode} target="_blank">Source Code</a>

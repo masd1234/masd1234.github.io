@@ -108,31 +108,30 @@
     padding: 3rem;
 
     .conIndv {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: space-evenly;
-      margin: 2%;
-      background-color: $white-color;
+      position: relative;
+      background-image: linear-gradient(
+        180deg,
+        rgb(255, 255, 255),
+        rgb(223, 223, 223)
+      );
       height: 280px;
-      flex-basis: 22%;
-      flex-shrink: 1;
+      flex-basis: 20%;
       border-radius: 1.5rem;
       color: rgb(38, 146, 247);
-      font-size: 1rem;
       text-align: center;
-      border: 1px black double;
 
       .video {
-        height: 110px;
-        max-width: 100%;
-        border-radius: 2rem;
+        border-radius: 1.5rem 1.5rem 0 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 11rem;
+        width: 100%;
       }
 
       .containerButtom {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        position: absolute;
+        top: 22rem;
         min-width: 200px;
         max-width: 200px;
 
@@ -143,16 +142,18 @@
             transition: 1s;
             text-decoration: none;
             color: $blue-color;
-            border: 1px $blue-color solid;
             padding: 0.5rem;
             border-radius: 0.5rem;
+            margin: 0 0.5rem;
             box-shadow: $box-shadow-link;
+            transition: 1s;
+            display: inline-block;
           }
 
           &:hover {
             color: $white-color;
             background-color: $blue-color;
-            transform: translateY(1px);
+            transform: translateY(-1px);
             box-shadow: $box-shadow-hover;
           }
 
@@ -224,7 +225,10 @@
   }
 }
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+/* The flip card container - set the width and height to whatever 
+you want. We have added the border property to demonstrate that the 
+flip itself goes out of the box on hover (remove perspective if you 
+don't want the 3D effect */
 .flip-card {
   background-color: transparent;
   height: 280px;
@@ -240,6 +244,7 @@
   height: 100%;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  box-shadow: $box-shadow-link;
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -274,6 +279,5 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
-
   transform: rotateY(180deg);
 }
