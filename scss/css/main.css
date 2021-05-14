@@ -396,18 +396,18 @@ footer p {
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 5rem;
+  gap: 8rem;
   align-content: center;
   height: 50%;
-  width: 100%;
+  width: 90%;
   padding: 3rem;
 }
 
 .projectContainer .containerMultiple .conIndv {
+  width: 25rem;
   position: relative;
   background-image: linear-gradient(180deg, white, #dfdfdf);
-  height: 280px;
-  flex-basis: 20%;
+  height: 33rem;
   border-radius: 1.5rem;
   color: #2692f7;
   text-align: center;

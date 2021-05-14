@@ -101,21 +101,21 @@
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 5rem;
+    gap: 8rem;
     align-content: center;
     height: 50%;
-    width: 100%;
+    width: 90%;
     padding: 3rem;
 
     .conIndv {
+      width: 25rem;
       position: relative;
       background-image: linear-gradient(
         180deg,
         rgb(255, 255, 255),
         rgb(223, 223, 223)
       );
-      height: 280px;
-      flex-basis: 20%;
+      height: 33rem;
       border-radius: 1.5rem;
       color: rgb(38, 146, 247);
       text-align: center;
