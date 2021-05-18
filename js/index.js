@@ -81,15 +81,6 @@ const arrayContainerJs = [
     showProject: "https://masd1234.github.io/vu/",
     showSourceCode: "https://github.com/masd1234/vu",
   },
-
-  {
-    titleProject: "T+C",
-    titleDescription:
-      "A responsive website built with Html, Css and JavaScript.",
-    img: "../resources/tmasc.gif",
-    showProject: "https://masd1234.github.io/tmasc/",
-    showSourceCode: "https://github.com/masd1234/tmasc",
-  },
 ];
 
 const arrayContainerReact = [
@@ -99,6 +90,14 @@ const arrayContainerReact = [
     img: "../resources/ms.gif",
     showProject: "https://masd1234.github.io/MundostarReact/#/",
     showSourceCode: "https://github.com/masd1234/MundostarReact",
+  },
+  {
+    titleProject: "T+C",
+    titleDescription:
+      "A responsive website built with Html, Css and JavaScript.",
+    img: "../resources/tmasc.gif",
+    showProject: "https://masd1234.github.io/tmcreact",
+    showSourceCode: "https://github.com/masd1234/tmcreact",
   },
   {
     titleProject: "Casupo",

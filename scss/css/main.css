@@ -592,20 +592,43 @@ don't want the 3D effect */
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  border: 4px solid whitesmoke;
+  position: relative;
+  box-shadow: 1px 1px 1px 3px rgba(248, 248, 248, 0.3);
   height: 30rem;
   flex-basis: 25rem;
   margin: 2rem;
   border-radius: 1rem;
   text-decoration: none;
   color: whitesmoke;
-  padding: 1rem;
   text-align: center;
   transition: 1s;
 }
 
+.containerContactMain .containerContact .container-icon {
+  position: absolute;
+  background-color: whitesmoke;
+  width: 100%;
+  top: 0;
+  height: 40%;
+  border-radius: 1rem 1rem 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerContactMain .containerContact .container-tag {
+  position: absolute;
+  bottom: 0;
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .containerContactMain .containerContact .fab,
 .containerContactMain .containerContact .fas {
+  color: #2069f1;
   font-size: 3.5rem;
 }
 
@@ -616,14 +639,13 @@ don't want the 3D effect */
 .containerContactMain .containerContact:hover {
   background-color: whitesmoke;
   color: #2069f1;
-  transform: translateY(-10px);
-  border: 4px solid rgba(71, 70, 70, 0.062);
+  transform: translateY(-5px);
 }
 
 .containerContactMain .containerContact:active {
   background-color: #2069f1;
   color: whitesmoke;
-  transform: translateY(10px);
+  transform: translateY(5px);
 }
 
 @media only screen and (max-width: 768px) {
