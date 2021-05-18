@@ -234,7 +234,8 @@ don't want the 3D effect */
   height: 280px;
   flex-basis: 25rem;
   flex-shrink: 1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
 }
 
 /* This container is needed to position the front and back side */

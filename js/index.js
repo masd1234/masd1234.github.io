@@ -93,8 +93,7 @@ const arrayContainerReact = [
   },
   {
     titleProject: "T+C",
-    titleDescription:
-      "A responsive website built with Html, Css and JavaScript.",
+    titleDescription: "A responsive website built with React.",
     img: "../resources/tmasc.gif",
     showProject: "https://masd1234.github.io/tmcreact",
     showSourceCode: "https://github.com/masd1234/tmcreact",
