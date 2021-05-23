@@ -64,15 +64,7 @@ const arrayContainerJs = [
     showProject: "https://masd1234.github.io/budget/",
     showSourceCode: "https://github.com/masd1234/budget",
   },
-  /*
-  {
-    titleProject: "Colomar",
-    titleDescription: "A responsive website built with Html and Css.",
-    img: "../resources/colmar.gif",
-    showProject: "https://masd1234.github.io/colmar/",
-    showSourceCode: "https://github.com/masd1234/colmar",
-  },
-*/
+
   {
     titleProject: "Vu",
     titleDescription:
@@ -97,14 +89,6 @@ const arrayContainerReact = [
     img: "../resources/tmasc.gif",
     showProject: "https://masd1234.github.io/tmcreact",
     showSourceCode: "https://github.com/masd1234/tmcreact",
-  },
-  {
-    titleProject: "Casupo",
-    titleDescription:
-      "Built using React Router this website will blow your mind.",
-    img: "../resources/casupo.gif",
-    showProject: "https://masd1234.github.io/casupo/",
-    showSourceCode: "https://github.com/masd1234/casupo",
   },
 
   {
