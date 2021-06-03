@@ -73,6 +73,14 @@ const arrayContainerJs = [
     showProject: "https://masd1234.github.io/vu/",
     showSourceCode: "https://github.com/masd1234/vu",
   },
+  {
+    titleProject: "Weather App",
+    titleDescription:
+      "This app will help you to stay update with the current weather on your city.",
+    img: "../resources/weather.gif",
+    showProject: "https://masd1234.github.io/weather/",
+    showSourceCode: "https://github.com/masd1234/weather",
+  },
 ];
 
 const arrayContainerReact = [
