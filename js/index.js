@@ -107,6 +107,14 @@ const arrayContainerReact = [
     showProject: "https://masd1234.github.io/booklist/",
     showSourceCode: "https://github.com/masd1234/booklist",
   },
+  {
+    titleProject: "React to do list",
+    titleDescription:
+      "This app is to keep track of your to do, built with react.",
+    img: "../resources/reacttodo.gif",
+    showProject: "https://masd1234.github.io/reacttodolist/",
+    showSourceCode: "https://github.com/masd1234/reacttodolist",
+  },
 ];
 
 const containerReturnedJs = arrayContainerJs.map((item) => {
