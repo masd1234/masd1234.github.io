@@ -1,0 +1,44 @@
+@mixin animationLeftMoved {
+  animation-duration: 2.5s;
+  animation-name: moveFromLeft;
+  animation-timing-function: linear;
+}
+
+@keyframes moveFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: translateX(14px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@mixin animationFromdownToUp {
+  animation-duration: 3s;
+  animation-name: fromdownToUp;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes fromdownToUp {
+  0% {
+    clip-path: polygon(1% 100%, 100% 100%, 100% 100%, 0 100%);
+  }
+
+  50% {
+    clip-path: polygon(1% 100%, 100% 100%, 100% 40%, 0 40%);
+  }
+
+  100% {
+    clip-path: polygon(1% 100%, 100% 100%, 100% 0, 0 0);
+  }
+}

@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Comfortaa", cursive;
+}
+
+html,
+body {
+  height: 100vh;
+  background: rgb(122, 189, 250);
+  background: linear-gradient(
+    86deg,
+    rgba(122, 189, 250, 1) 0%,
+    rgba(0, 117, 255, 1) 48%,
+    rgba(3, 108, 255, 1) 100%,
+    rgba(14, 80, 255, 1) 100%,
+    rgba(239, 71, 6, 1) 100%,
+    rgba(189, 206, 195, 1) 100%,
+    rgba(0, 255, 85, 1) 100%,
+    rgba(14, 145, 255, 1) 100%,
+    rgba(0, 255, 25, 1) 100%,
+    rgba(18, 159, 255, 1) 100%,
+    rgba(50, 116, 255, 1) 100%
+  );
+}
+
+
