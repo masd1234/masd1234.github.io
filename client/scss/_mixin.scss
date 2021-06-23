@@ -1,7 +1,8 @@
 @mixin animationLeftMoved {
-  animation-duration: 2.5s;
+  animation-duration: 2s;
   animation-name: moveFromLeft;
   animation-timing-function: linear;
+  animation-fill-mode: forwards;
 }
 
 @keyframes moveFromLeft {
@@ -22,9 +23,9 @@
 }
 
 @mixin animationFromdownToUp {
-  animation-duration: 3s;
+  animation-duration: 5s;
   animation-name: fromdownToUp;
-  animation-delay: 1.5s;
+  animation-delay: 1s;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }

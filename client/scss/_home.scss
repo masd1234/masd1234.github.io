@@ -2,14 +2,14 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 80rem;
+  height: 100%;
 
   .imgCont {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 30%;
-    height: 100%;
+    height: auto;
     @include animationLeftMoved;
     .img {
       min-height: 100px;
@@ -28,7 +28,7 @@
     justify-content: center;
     flex-direction: column;
     width: 60%;
-    height: 100%;
+    height: auto;
     font-size: 1.5rem;
     color: $white-color;
     padding: 1.5rem;

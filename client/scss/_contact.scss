@@ -5,7 +5,6 @@
   align-content: center;
   justify-content: center;
   flex-direction: column;
-  @include animationLeftMoved;
 
   & h1 {
     color: $white-color;
@@ -20,6 +19,20 @@
   width: 100%;
   height: 100%;
 
+  #cont1 {
+    @include animationLeftMoved;
+  }
+
+  #cont2 {
+    animation-delay: 2s;
+    @include animationLeftMoved;
+  }
+
+  #cont3 {
+    animation-delay: 4s;
+    @include animationLeftMoved;
+  }
+
   .containerContact {
     display: flex;
     align-items: center;
@@ -28,6 +41,7 @@
     position: relative;
     box-shadow: 1px 1px 1px 3px rgba($color: #f8f8f8, $alpha: 0.3);
     height: 30rem;
+    opacity: 0;
     flex-basis: 25rem;
     margin: 2rem;
     border-radius: 1rem;
@@ -71,7 +85,7 @@
     &:hover {
       background-color: $white-color;
       color: $blue-color;
-      transform: translateY(-5px);
+      transform: translateY(-100px);
     }
 
     &:active {

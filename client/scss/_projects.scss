@@ -116,7 +116,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0.1rem;
     align-content: center;
     height: 50%;
     width: 100%;
@@ -126,21 +126,10 @@
       width: 100%;
       background-color: whitesmoke;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
       align-items: center;
       flex-wrap: wrap;
       align-content: center;
-      gap: 3rem;
-
-      .title-projectOverview {
-        font-size: 4rem;
-        color: $blue-color;
-      }
-
-      .title-projectOverview-descripton {
-        color: $blue-color;
-        font-size: 1.5rem;
-      }
 
       .projectOverview {
         width: 60%;
@@ -150,6 +139,16 @@
         justify-content: center;
         gap: 2rem;
         flex-direction: column;
+      }
+
+      .title-projectOverview {
+        font-size: 4rem;
+        color: $blue-color;
+      }
+
+      .title-projectOverview-descripton {
+        color: $blue-color;
+        font-size: 1.5rem;
       }
 
       .conIndv {
@@ -228,7 +227,7 @@
 
 .flip-card {
   background-color: transparent;
-  flex-basis: 25rem;
+  flex-basis: 30rem;
   flex-shrink: 1;
   perspective: 1000px;
 
@@ -273,6 +272,7 @@
 
 @media only screen and (max-width: 768px) {
   .projectContainer {
+    justify-content: center;
     .containerMultiple {
       .containerProjectShow {
         .title-projectOverview {
@@ -291,12 +291,17 @@
         flex-grow: 0.6;
       }
     }
-    justify-content: center;
+
     .titleCont {
       font-size: 2rem;
       text-align: center;
     }
   }
+
+  .flip-card {
+    flex-basis: 25rem;
+  }
+
   .projects_title {
     flex-wrap: wrap;
     align-content: center;

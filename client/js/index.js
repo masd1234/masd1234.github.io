@@ -181,7 +181,7 @@ const fadersUp = document.querySelectorAll(".flip-card");
 
 const apperarOptions = {
   threshold: 0,
-  rootMargin: "0px 0px -350px 0px",
+  rootMargin: "0px 0px -190px 0px",
 };
 const appearsOnScroll = new IntersectionObserver(function (
   entries,

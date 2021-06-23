@@ -210,7 +210,7 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 80rem;
+  height: 100%;
 }
 
 .homeCont .imgCont {
@@ -218,10 +218,11 @@ footer p {
   align-items: center;
   justify-content: center;
   width: 30%;
-  height: 100%;
-  animation-duration: 2.5s;
+  height: auto;
+  animation-duration: 2s;
   animation-name: moveFromLeft;
   animation-timing-function: linear;
+  animation-fill-mode: forwards;
 }
 
 .homeCont .imgCont .img {
@@ -234,9 +235,9 @@ footer p {
 }
 
 .homeCont .textContainter {
-  animation-duration: 3s;
+  animation-duration: 5s;
   animation-name: fromdownToUp;
-  animation-delay: 1.5s;
+  animation-delay: 1s;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
   display: flex;
@@ -244,7 +245,7 @@ footer p {
   justify-content: center;
   flex-direction: column;
   width: 60%;
-  height: 100%;
+  height: auto;
   font-size: 1.5rem;
   color: whitesmoke;
   padding: 1.5rem;
@@ -326,15 +327,16 @@ footer p {
 .projects_title h1 {
   font-size: 4.5rem;
   text-align: center;
-  animation-duration: 2.5s;
+  animation-duration: 2s;
   animation-name: moveFromLeft;
   animation-timing-function: linear;
+  animation-fill-mode: forwards;
 }
 
 .textContainerProjects {
-  animation-duration: 3s;
+  animation-duration: 5s;
   animation-name: fromdownToUp;
-  animation-delay: 1.5s;
+  animation-delay: 1s;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
   clip-path: polygon(1% 100%, 100% 100%, 100% 100%, 0 100%);
@@ -434,7 +436,7 @@ footer p {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.1rem;
   align-content: center;
   height: 50%;
   width: 100%;
@@ -445,21 +447,10 @@ footer p {
   width: 100%;
   background-color: whitesmoke;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   align-content: center;
-  gap: 3rem;
-}
-
-.projectContainer .containerMultiple .containerProjectShow .title-projectOverview {
-  font-size: 4rem;
-  color: #2069f1;
-}
-
-.projectContainer .containerMultiple .containerProjectShow .title-projectOverview-descripton {
-  color: #2069f1;
-  font-size: 1.5rem;
 }
 
 .projectContainer .containerMultiple .containerProjectShow .projectOverview {
@@ -470,6 +461,16 @@ footer p {
   justify-content: center;
   gap: 2rem;
   flex-direction: column;
+}
+
+.projectContainer .containerMultiple .containerProjectShow .title-projectOverview {
+  font-size: 4rem;
+  color: #2069f1;
+}
+
+.projectContainer .containerMultiple .containerProjectShow .title-projectOverview-descripton {
+  color: #2069f1;
+  font-size: 1.5rem;
 }
 
 .projectContainer .containerMultiple .containerProjectShow .conIndv {
@@ -538,7 +539,7 @@ footer p {
 
 .flip-card {
   background-color: transparent;
-  flex-basis: 25rem;
+  flex-basis: 30rem;
   flex-shrink: 1;
   perspective: 1000px;
 }
@@ -603,6 +604,9 @@ footer p {
     font-size: 2rem;
     text-align: center;
   }
+  .flip-card {
+    flex-basis: 25rem;
+  }
   .projects_title {
     flex-wrap: wrap;
     align-content: center;
@@ -648,9 +652,6 @@ footer p {
   align-content: center;
   justify-content: center;
   flex-direction: column;
-  animation-duration: 2.5s;
-  animation-name: moveFromLeft;
-  animation-timing-function: linear;
 }
 
 .contac-Section h1 {
@@ -666,6 +667,29 @@ footer p {
   height: 100%;
 }
 
+.containerContactMain #cont1 {
+  animation-duration: 2s;
+  animation-name: moveFromLeft;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.containerContactMain #cont2 {
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-name: moveFromLeft;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.containerContactMain #cont3 {
+  animation-delay: 4s;
+  animation-duration: 2s;
+  animation-name: moveFromLeft;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
 .containerContactMain .containerContact {
   display: flex;
   align-items: center;
@@ -674,6 +698,7 @@ footer p {
   position: relative;
   box-shadow: 1px 1px 1px 3px rgba(248, 248, 248, 0.3);
   height: 30rem;
+  opacity: 0;
   flex-basis: 25rem;
   margin: 2rem;
   border-radius: 1rem;
@@ -718,7 +743,7 @@ footer p {
 .containerContactMain .containerContact:hover {
   background-color: whitesmoke;
   color: #2069f1;
-  transform: translateY(-5px);
+  transform: translateY(-100px);
 }
 
 .containerContactMain .containerContact:active {
