@@ -149,6 +149,7 @@
       .title-projectOverview-descripton {
         color: $blue-color;
         font-size: 1.5rem;
+        width: 85%;
       }
 
       .conIndv {
@@ -270,7 +271,7 @@
   transform: rotateY(180deg);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 780px) {
   .projectContainer {
     justify-content: center;
     .containerMultiple {
@@ -281,6 +282,7 @@
 
         .title-projectOverview-descripton {
           font-size: 1.3rem;
+          width: 100%;
         }
         .projectOverview {
           width: 90%;

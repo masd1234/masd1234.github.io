@@ -15,6 +15,7 @@ const displayMenu = () => {
 
 mobileButtom.onclick = displayMenu;
 
+// scroll effect
 document.querySelectorAll(".linkProjects").forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -172,8 +173,6 @@ const containerReturnedReact = arrayContainerReact.map((item) => {
 
 parentContainerProjectsJs.innerHTML = containerReturnedJs.join(" ");
 parentContainerProjectsReact.innerHTML = containerReturnedReact.join(" ");
-
-/*scroll animations for project section*/
 
 const faders = document.querySelectorAll(".containerProjectShow");
 const fadersLeft = document.querySelectorAll(".projectOverview");
