@@ -105,21 +105,73 @@
   width: 100%;
   flex-direction: column;
 
+  .unvalid-cont {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: $white-color;
+    background-color: rgba(247, 1, 1, 0.856);
+    width: 80%;
+    height: 20%;
+    border-radius: 0.5rem;
+
+    .close {
+      border: none;
+      color: red;
+      width: 2rem;
+    }
+  }
+
+  .sent {
+    display: flex;
+  }
+
+  .not-sent {
+    display: none;
+  }
+
+  .message-sent-container {
+    background-color: $white-color;
+    width: 95%;
+    height: 95%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    h1 {
+      color: $blue-color;
+      width: 80%;
+    }
+    button {
+      @include buttonS;
+      &:hover {
+        color: $white-color;
+        background-color: $blue-color;
+        transform: translateY(-3px);
+      }
+    }
+  }
+
   .form-title {
     font-size: 2.5rem;
-    color: whitesmoke;
+    color: $white-color;
   }
 
   .form {
-    border: 1px solid whitesmoke;
-    width: 70%;
+    border: 1px solid $white-color;
+    width: 80%;
     height: 50%;
     border-radius: 0.5rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     .label {
-      color: whitesmoke;
+      color: $white-color;
       font-size: 1.5rem;
       margin-right: 1rem;
     }
@@ -127,13 +179,24 @@
       text-align: center;
       border-radius: 0.2rem;
       border: none;
+      min-width: 20rem;
+    }
+
+    .inputSubmit {
+      @include buttonS;
+
+      &:hover {
+        color: $white-color;
+        background-color: $blue-color;
+        transform: translateY(-3px);
+      }
     }
   }
 }
 
 @media only screen and (max-width: 768px) {
   .contac-Section {
-    height: 130rem;
+    height: 80rem;
   }
   .containerContactMain {
     flex-wrap: wrap;
@@ -141,6 +204,15 @@
     .fab,
     .fas {
       font-size: 2rem;
+    }
+  }
+
+  .form-container {
+    height: 70rem;
+    .form {
+      .input {
+        width: 59%;
+      }
     }
   }
 }

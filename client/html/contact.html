@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <link href="../resources/css/all.css" rel="stylesheet" />
-    <script src="../js/index.js" async></script>
+    <script type="module" src="../js/index.js" async></script>
     <script src="../js/form.js" async></script>
   </head>
   <body>
@@ -38,19 +38,6 @@
     <section class="contac-Section">
       <h1>Let us get in touch:</h1>
       <div class="containerContactMain">
-        <a
-          class="containerContact"
-          id="cont1"
-          href="mailto: masd_123@hotmail.com"
-        >
-          <div class="container-icon">
-            <i class="fas fa-envelope-square"></i>
-          </div>
-          <div class="container-tag">
-            <p>Email: <br />masd_123@hotmail.com</p>
-          </div>
-        </a>
-
         <a
           class="containerContact"
           id="cont2"
@@ -79,19 +66,42 @@
         </a>
       </div>
     </section>
-    <!--
+
     <section class="form-container">
+      <div class="message-sent-container not-sent">
+        <h1>
+          Your message was succesfully sent, I will return as soon as possible.
+        </h1>
+        <button class="back">Go Back!</button>
+      </div>
       <h1 class="form-title">Contact form</h1>
-      <form class="form" method="POST" action="/contact">
+      <div class="unvalid-cont not-sent">
+        <button class="close">x</button>
+        <h1>All inputs must be filled.</h1>
+      </div>
+      <form name="myForm" class="form" action="/contact" method="POST">
         <label class="label" for="name">Name:</label>
-        <input class="input" id="name" type="text" name="name" />
+        <input class="input" id="name" type="text" name="name" required />
+        <label class="label" for="lname">Last Name:</label>
+        <input class="input" id="lname" type="text" name="lname" required />
+        <label class="label" for="email">Email:</label>
+        <input class="input" id="email" type="email" name="email" required />
+        <label class="label" for="message">Your Message:</label>
+        <textarea
+          class="input"
+          id="message"
+          name="message"
+          rows="4"
+          cols="50"
+          required
+        >
+        </textarea>
         <br />
         <br />
-        <input class="inputSubmit" type="submit" value="submit" />
+        <button class="inputSubmit" type="submit">Submit</button>
       </form>
     </section>
-    <buttom class="test">TEST</buttom>
--->
+
     <footer>
       <p>Marco Sanchez 2021</p>
     </footer>

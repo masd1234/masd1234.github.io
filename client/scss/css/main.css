@@ -401,7 +401,7 @@ footer p {
 .projectContainer .titleCont {
   color: whitesmoke;
   font-size: 3rem;
-  height: 20rem;
+  height: 8rem;
 }
 
 .projectContainer .js {
@@ -764,6 +764,67 @@ footer p {
   flex-direction: column;
 }
 
+.form-container .unvalid-cont {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: whitesmoke;
+  background-color: rgba(247, 1, 1, 0.856);
+  width: 80%;
+  height: 20%;
+  border-radius: 0.5rem;
+}
+
+.form-container .unvalid-cont .close {
+  border: none;
+  color: red;
+  width: 2rem;
+}
+
+.form-container .sent {
+  display: flex;
+}
+
+.form-container .not-sent {
+  display: none;
+}
+
+.form-container .message-sent-container {
+  background-color: whitesmoke;
+  width: 95%;
+  height: 95%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.form-container .message-sent-container h1 {
+  color: #2069f1;
+  width: 80%;
+}
+
+.form-container .message-sent-container button {
+  text-align: center;
+  border: none;
+  padding: 0.5rem;
+  background-color: whitesmoke;
+  font-weight: bold;
+  color: #2069f1;
+  border-radius: 0.5rem;
+  transition: 1s;
+}
+
+.form-container .message-sent-container button:hover {
+  color: whitesmoke;
+  background-color: #2069f1;
+  transform: translateY(-3px);
+}
+
 .form-container .form-title {
   font-size: 2.5rem;
   color: whitesmoke;
@@ -771,10 +832,11 @@ footer p {
 
 .form-container .form {
   border: 1px solid whitesmoke;
-  width: 70%;
+  width: 80%;
   height: 50%;
   border-radius: 0.5rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -789,11 +851,29 @@ footer p {
   text-align: center;
   border-radius: 0.2rem;
   border: none;
+  min-width: 20rem;
+}
+
+.form-container .form .inputSubmit {
+  text-align: center;
+  border: none;
+  padding: 0.5rem;
+  background-color: whitesmoke;
+  font-weight: bold;
+  color: #2069f1;
+  border-radius: 0.5rem;
+  transition: 1s;
+}
+
+.form-container .form .inputSubmit:hover {
+  color: whitesmoke;
+  background-color: #2069f1;
+  transform: translateY(-3px);
 }
 
 @media only screen and (max-width: 768px) {
   .contac-Section {
-    height: 130rem;
+    height: 80rem;
   }
   .containerContactMain {
     flex-wrap: wrap;
@@ -802,6 +882,12 @@ footer p {
   .containerContactMain .fab,
   .containerContactMain .fas {
     font-size: 2rem;
+  }
+  .form-container {
+    height: 70rem;
+  }
+  .form-container .form .input {
+    width: 59%;
   }
 }
 /*# sourceMappingURL=main.css.map */
