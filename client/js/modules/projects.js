@@ -1,5 +1,5 @@
 const containerProjects = [
-  {
+  /*{
     language: "javascript",
     titleProject: "To-do List",
     titleDescription:
@@ -7,13 +7,13 @@ const containerProjects = [
     img: "../resources/todo.gif",
     showProject: "https://masd1234.github.io/TodoList/",
     showSourceCode: "https://github.com/masd1234/TodoList",
-  },
+  },*/
 
   {
     language: "javascript",
     titleProject: "Dog Finder",
     titleDescription:
-      "Find your favorite dog using this app: HTML, CSS and JavaScript.",
+      "Find your favorite dog using this app: HTML, CSS and JavaScript Fetch API.",
     img: "../resources/dog.gif",
     showProject: "https://masd1234.github.io/dogFinder/",
     showSourceCode: "https://github.com/masd1234/dogFinder/settings",
@@ -76,9 +76,9 @@ const containerProjects = [
 
   {
     language: "react",
-    titleProject: "Book List",
+    titleProject: "Book List App",
     titleDescription:
-      "This app is to keep track the books that you have read, built with react.",
+      "This app is to keep track the books that you have read, built with React and Sass.",
     img: "../resources/booklist.gif",
     showProject: "https://masd1234.github.io/booklist/",
     showSourceCode: "https://github.com/masd1234/booklist",
