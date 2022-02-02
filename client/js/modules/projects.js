@@ -13,7 +13,7 @@ const containerProjects = [
     language: "javascript",
     titleProject: "Dog Finder",
     titleDescription:
-      "Find your favorite dog using this app: HTML, CSS and JavaScript Fetch API.",
+      "Find your favorite dog using this app: HTML, CSS and TypeScript Fetch API.",
     img: "../resources/dog.gif",
     showProject: "https://masd1234.github.io/dogFinder/",
     showSourceCode: "https://github.com/masd1234/dogFinder/settings",
@@ -33,7 +33,7 @@ const containerProjects = [
     language: "javascript",
     titleProject: "Budget App",
     titleDescription:
-      "If you want to keep track of your money use this app and will let you know how much you spent. built with: HTML, CSS and JavaScript.",
+      "If you want to keep track of your money use this app and will let you know how much you spent. built with: HTML, CSS and TypeScript.",
     img: "../resources/budget.gif",
     showProject: "https://masd1234.github.io/budget/",
     showSourceCode: "https://github.com/masd1234/budget",
@@ -85,12 +85,12 @@ const containerProjects = [
   },
   {
     language: "react",
-    titleProject: "React to do list",
+    titleProject: " Todo list",
     titleDescription:
       "This app is to keep track of your to do, built with react.",
     img: "../resources/reacttodo.gif",
-    showProject: "https://masd1234.github.io/reacttodolist/",
-    showSourceCode: "https://github.com/masd1234/reacttodolist",
+    showProject: "https://masd1234.github.io/reactodo/#/",
+    showSourceCode: "https://github.com/masd1234/reactodo",
   },
 ];
 
