@@ -89,7 +89,7 @@ const containerProjects = [
     titleDescription:
       "This app is to keep track of your to do, built with react.",
     img: "../resources/reacttodo.gif",
-    showProject: "https://masd1234.github.io/reactodo/#/",
+    showProject: "https://masd1234.github.io/reactodo/",
     showSourceCode: "https://github.com/masd1234/reactodo",
   },
 ];
