@@ -87,7 +87,7 @@ const containerProjects = [
     language: "react",
     titleProject: " Todo list",
     titleDescription:
-      "This app is to keep track of your to do, built with react.",
+      "This (CRUD) app is to keep track of your to do, built with React and Sass.",
     img: "../resources/reacttodo.gif",
     showProject: "https://masd1234.github.io/reactodo/",
     showSourceCode: "https://github.com/masd1234/reactodo",
