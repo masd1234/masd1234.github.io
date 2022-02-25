@@ -13,7 +13,6 @@
     />
     <link href="../resources/css/all.css" rel="stylesheet" />
     <script type="module" src="../js/index.js" async></script>
-    <script src="../js/form.js" async></script>
   </head>
   <body>
     <header class="header">
@@ -35,72 +34,20 @@
       <li><a href="./projects.html">Projects</a></li>
       <li><a href="./contact.html">Contact</a></li>
     </ul>
-    <section class="contac-Section">
-      <h1>Let us get in touch:</h1>
-      <div class="containerContactMain">
-        <a
-          class="containerContact"
-          id="cont2"
-          href="https://www.linkedin.com/in/marco-sanchez-4880041ab/"
-          target="_blank"
-        >
-          <div class="container-icon">
-            <i class="fab fa-linkedin-in"></i>
-          </div>
-          <div class="container-tag">
-            <p>LinkedIn</p>
-          </div>
-        </a>
-        <a
-          class="containerContact"
-          id="cont3"
-          href="https://github.com/masd1234"
-          target="_blank"
-        >
-          <div class="container-icon">
-            <i class="fab fa-github-square"></i>
-          </div>
-          <div class="container-tag">
-            <p>GitHub</p>
-          </div>
-        </a>
+    <div class="container-contact">
+      <div class="contact">
+        <h1>Email</h1>
+        <a href="mailto: masd_123@hotmail.com">Click Here</a>
       </div>
-    </section>
-
-    <section class="form-container">
-      <div class="message-sent-container not-sent">
-        <h1>
-          Your message was succesfully sent, I will return as soon as possible.
-        </h1>
-        <button class="back">Go Back!</button>
+      <div class="contact">
+        <h1>LinkedIn</h1>
+        <a href="https://linkedin.com/in/mansd" target="_blank">Click Here</a>
       </div>
-      <h1 class="form-title">Contact form</h1>
-      <div class="unvalid-cont not-sent">
-        <button class="close">x</button>
-        <h1>All inputs must be filled.</h1>
+      <div class="contact">
+        <h1>GitHub</h1>
+        <a href="https://github.com/masd1234" target="_blank">Click Here</a>
       </div>
-      <form name="myForm" class="form" action="/contact" method="POST">
-        <label class="label" for="name">Name:</label>
-        <input class="input" id="name" type="text" name="name" required />
-        <label class="label" for="lname">Last Name:</label>
-        <input class="input" id="lname" type="text" name="lname" required />
-        <label class="label" for="email">Email:</label>
-        <input class="input" id="email" type="email" name="email" required />
-        <label class="label" for="message">Your Message:</label>
-        <textarea
-          class="input"
-          id="message"
-          name="message"
-          rows="4"
-          cols="50"
-          required
-        >
-        </textarea>
-        <br />
-        <br />
-        <button class="inputSubmit" type="submit">Submit</button>
-      </form>
-    </section>
+    </div>
 
     <footer>
       <p>Marco Sanchez 2021</p>
