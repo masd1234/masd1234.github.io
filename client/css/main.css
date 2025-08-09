@@ -7,14 +7,19 @@
 html {
   font-size: 10px;
   font-family: "Poppins", sans-serif;
+  height: 100%;
 }
 
-html,
 body {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   width: 100%;
-  background: #7abdfa;
   background: linear-gradient(86deg, #7abdfa 0%, #0075ff 48%, #036cff 100%, #0e50ff 100%, #ef4706 100%, #bdcec3 100%, #00ff55 100%, #0e91ff 100%, #00ff19 100%, #129fff 100%, #3274ff 100%);
+}
+
+main {
+  flex: 1;
 }
 
 @keyframes moveFromLeft {
@@ -34,42 +39,51 @@ body {
 
 @keyframes fromdownToUp {
   0% {
-    clip-path: polygon(1% 100%, 100% 100%, 100% 100%, 0 100%);
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
   }
   50% {
-    clip-path: polygon(1% 100%, 100% 100%, 100% 40%, 0 40%);
+    clip-path: polygon(0 100%, 100% 100%, 100% 40%, 0 40%);
   }
   100% {
-    clip-path: polygon(1% 100%, 100% 100%, 100% 0, 0 0);
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
   }
 }
 
 .header {
   width: 100%;
+  height: 6%;
   z-index: 10;
   position: fixed;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 7%;
+  justify-content: space-evenly;
   background: #7abdfa;
-  background: linear-gradient(86deg, #7abdfa 0%, #0075ff 48%, #036cff 100%, #0e50ff 100%, #ef4706 100%, #bdcec3 100%, #00ff55 100%, #0e91ff 100%, #00ff19 100%, #129fff 100%, #3274ff 100%);
+  background: linear-gradient(86deg, #7abdfa 0%, #0075ff 48%, #036cff 100%);
 }
 
-.header .logo {
+.header .logoContainer {
+  flex: 1;
+  align-content: center;
+}
+
+.header .logoContainer .logo {
+  margin-left: 5rem;
   font-size: 2rem;
   color: whitesmoke;
 }
 
-.header .navBar {
-  font-size: 1.6rem;
-  width: 40%;
+.header nav {
+  flex: 1;
+  align-content: center;
+}
+
+.header nav .navBar {
+  font-size: 1.9rem;
   display: flex;
   justify-content: space-evenly;
   list-style: none;
 }
 
-.header .navBar li a {
+.header nav .navBar li a {
   color: whitesmoke;
   text-decoration: none;
   border-radius: 0.5rem;
@@ -77,7 +91,7 @@ body {
   transition: 1s;
 }
 
-.header .navBar li a:hover {
+.header nav .navBar li a:hover {
   background-color: whitesmoke;
   color: #2069f1;
 }
@@ -175,17 +189,20 @@ body {
   opacity: 0.95;
   z-index: 1;
   transform: translateX(0%);
+  text-align: center;
+  padding: 5rem;
 }
 
 @media only screen and (max-width: 768px) {
   .header .logo {
     margin-left: 0.5rem;
   }
-  .header .navBar {
+  .header nav {
     display: none;
   }
   .header .mobileMenu {
     display: block;
+    color: red;
   }
 }
 
@@ -194,7 +211,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 5%;
   font-size: 1rem;
   width: 100%;
   background-color: whitesmoke;
@@ -205,73 +221,61 @@ footer p {
   padding-left: 1rem;
 }
 
-.homeCont {
+main {
+  height: 100vh;
+}
+
+main .homeCont {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 95%;
+  min-height: 100vh;
 }
 
-.homeCont .imgCont {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30%;
-  height: auto;
-  animation-duration: 1.7s;
-  animation-name: moveFromLeft;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-}
-
-.homeCont .imgCont .img {
-  min-height: 100px;
-  max-height: 300px;
-  max-width: 100%;
-  min-width: 10%;
-  align-self: center;
-  border-radius: 30rem;
-}
-
-.homeCont .textContainter {
-  animation-duration: 2s;
+main .homeCont .textContainer {
+  animation-duration: 1s;
   animation-name: fromdownToUp;
-  animation-delay: 1.7s;
+  animation-delay: 0.5s;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
   flex-direction: column;
-  width: 60%;
-  height: auto;
-  font-size: 1.5rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 80%;
+  font-size: 1.7rem;
   color: whitesmoke;
-  padding: 1.5rem;
-  clip-path: polygon(1% 100%, 100% 100%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
-.homeCont .textContainter .myResume {
+main .homeCont .textContainer h1 {
+  font-size: 3rem;
+}
+
+main .homeCont .textContainer .HomeButtonContact {
   color: whitesmoke;
-  animation-timing-function: linear;
-  transform: translateY(0px);
-  transition: 1s;
-  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-size: 1.4rem;
   text-decoration: none;
-  border-radius: 1rem;
-  border: 1px solid whitesmoke;
+  border: 2px solid whitesmoke;
+  border-radius: 0.5rem;
   padding: 0.5rem;
+  text-align: center;
+  width: 25%;
   box-shadow: 1px 1px 2px 0.5px rgba(0, 0, 0, 0.205);
+  transition: 1s;
+  transform: translateY(0px);
+  animation-timing-function: linear;
 }
 
-.homeCont .textContainter a:hover {
+main .homeCont .textContainer .HomeButtonContact:hover {
   background-color: whitesmoke;
   color: #2069f1;
   transform: translateY(-5px);
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.089);
 }
 
-.homeCont .textContainter a:active {
+main .homeCont .textContainer .HomeButtonContact:active {
   background-color: #2069f1;
   color: whitesmoke;
   transform: translateY(10px);
@@ -279,34 +283,36 @@ footer p {
 }
 
 @media only screen and (max-width: 769px) {
-  .homeCont {
-    align-content: center;
-    flex-wrap: wrap;
-    gap: 3rem;
+  main .homeCont {
+    flex-direction: column;
+    padding-bottom: 2rem;
   }
-  .homeCont .imgCont {
-    width: 90%;
-    height: 30%;
-  }
-  .homeCont .imgCont .img {
-    max-width: 100%;
-    height: 20rem;
-  }
-  .homeCont .textContainter {
-    font-size: 1.3rem;
-    width: 90%;
-    height: auto;
-    text-align: center;
+  main .homeCont .textContainer {
     align-items: center;
+    text-align: center;
   }
-  .homeCont .textContainter .myResume {
-    font-size: 1.5rem;
+  main .homeCont .textContainer h1,
+  main .homeCont .textContainer p {
+    width: 100%;
+  }
+  main .homeCont .textContainer .HomeButtonContact {
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 321px) {
-  .homeCont {
-    height: 720px;
+  main .homeCont {
+    min-height: 100vh;
+  }
+  main .homeCont .textContainer h1 {
+    font-size: 2rem;
+  }
+  main .homeCont .textContainer p {
+    font-size: 1rem;
+  }
+  main .homeCont .textContainer .HomeButtonContact {
+    font-size: 1rem;
+    width: 100%;
   }
 }
 
@@ -333,37 +339,36 @@ footer p {
 }
 
 .textContainerProjects {
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-name: fromdownToUp;
-  animation-delay: 1.7s;
+  animation-delay: 0.5s;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
   clip-path: polygon(1% 100%, 100% 100%, 100% 100%, 0 100%);
   padding: 1.5rem;
-  font-size: 2.7rem;
+  font-size: 2.2rem;
   height: 20%;
-  flex-basis: 50%;
   gap: 1rem;
   display: flex;
-  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
 }
 
 .textContainerProjects .container-scroll {
   display: flex;
+  justify-content: space-evenly;
   width: 100%;
   gap: 1rem;
 }
 
 .textContainerProjects .container-scroll .linkProjects:link {
-  flex-basis: 25%;
+  flex-basis: 40%;
   flex-grow: 0.2;
   flex-shrink: 1;
-  border-radius: 1rem;
-  border: solid 2px whitesmoke;
+  border-radius: 0.7rem;
+  border: solid 1px whitesmoke;
   padding: 0.5rem;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: whitesmoke;
   text-decoration: none;
   text-align: center;
@@ -646,44 +651,42 @@ footer p {
   }
 }
 
-.container-contact {
+main .container-contact {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5%;
-  height: 95%;
   flex-wrap: wrap;
-  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.container-contact .contact {
+main .container-contact .contact {
+  font-size: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   border: solid whitesmoke 1px;
-  padding: 8rem;
   border-radius: 3rem;
-  height: 30rem;
+  height: 25rem;
   width: 25rem;
   transition: 1s;
 }
 
-.container-contact .contact:hover {
+main .container-contact .contact:hover {
   background-color: whitesmoke;
   transform: translateY(-1rem);
 }
 
-.container-contact .contact:hover h1,
-.container-contact .contact:hover a {
+main .container-contact .contact:hover h3,
+main .container-contact .contact:hover a {
   color: #2069f1;
 }
 
-.container-contact .contact h1 {
+main .container-contact .contact h3 {
   color: whitesmoke;
 }
 
-.container-contact .contact a {
+main .container-contact .contact a {
   text-decoration: none;
   color: whitesmoke;
   font-size: 1.4rem;
@@ -692,16 +695,18 @@ footer p {
   padding: 0 0.4rem;
 }
 
-.container-contact .contact a:hover {
+main .container-contact .contact a:hover {
   background-color: #2069f1;
   color: whitesmoke;
 }
 
-@media only screen and (max-width: 834px) {
-  .container-contact {
-    gap: 5%;
-    height: 115rem;
-    padding-top: 1rem;
+@media only screen and (max-width: 769px) {
+  main .container-contact {
+    align-content: center;
+    gap: 3rem;
+  }
+  main .container-contact .contact {
+    height: 15rem;
+    width: 20rem;
   }
 }
-/*# sourceMappingURL=main.css.map */

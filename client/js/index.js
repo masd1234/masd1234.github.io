@@ -32,6 +32,7 @@ containerProjects.forEach((item) => {
   </div>
   </div>
   `;
+
   const lastContainer = document.createElement("div");
   lastContainer.className = "containerProjectShow fade-out";
   lastContainer.innerHTML = containerIdividual;

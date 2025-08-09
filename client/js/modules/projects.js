@@ -1,14 +1,4 @@
 const containerProjects = [
-  /*{
-    language: "javascript",
-    titleProject: "To-do List",
-    titleDescription:
-      "This project is a to-do list built using, you can keep track of your pending tasks: HTML, CSS and JavaScript.",
-    img: "../resources/todo.gif",
-    showProject: "https://masd1234.github.io/TodoList/",
-    showSourceCode: "https://github.com/masd1234/TodoList",
-  },*/
-
   {
     language: "javascript",
     titleProject: "Dog Finder",

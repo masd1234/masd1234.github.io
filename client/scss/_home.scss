@@ -1,96 +1,110 @@
-.homeCont {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 95%;
-  .imgCont {
+main {
+  height: 100vh;
+
+  .homeCont {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 30%;
-    height: auto;
-    @include animationLeftMoved;
-    .img {
-      min-height: 100px;
-      max-height: 300px;
-      max-width: 100%;
-      min-width: 10%;
-      align-self: center;
-      border-radius: 30rem;
-    }
-  }
+    justify-content: space-evenly;
+    min-height: 100vh;
 
-  .textContainter {
-    @include animationFromdownToUp;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    width: 60%;
-    height: auto;
-    font-size: 1.5rem;
-    color: $white-color;
-    padding: 1.5rem;
-    clip-path: polygon(1% 100%, 100% 100%, 100% 100%, 0 100%);
-
-    .myResume {
+    .textContainer {
+      @include animationFromdownToUp;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 80%;
+      font-size: 1.7rem;
       color: $white-color;
-      animation-timing-function: linear;
-      transform: $unhover-buttom;
-      transition: 1s;
-      font-size: 1.5rem;
-      text-decoration: none;
-      border-radius: 1rem;
-      border: 1px solid $white-color;
-      padding: 0.5rem;
-      box-shadow: $box-shadow-link;
-    }
 
-    & a:hover {
-      background-color: $white-color;
-      color: $blue-color;
-      transform: $hover-buttom;
-      box-shadow: $box-shadow-hover;
-    }
+      // Optional: angled visual effect — remove if not needed
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
-    & a:active {
-      background-color: $blue-color;
-      color: $white-color;
-      transform: translateY(10px);
-      box-shadow: $box-shadow-hover;
+      h1 {
+        font-size: 3rem;
+      }
+
+      .HomeButtonContact {
+        color: $white-color;
+        margin-top: 1rem;
+        font-size: 1.4rem;
+        text-decoration: none;
+        border: 2px solid $white-color;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        text-align: center;
+        width: 25%;
+        box-shadow: $box-shadow-link;
+        transition: 1s;
+        transform: $unhover-buttom;
+        animation-timing-function: linear;
+
+        &:hover {
+          background-color: $white-color;
+          color: $blue-color;
+          transform: $hover-buttom;
+          box-shadow: $box-shadow-hover;
+        }
+
+        &:active {
+          background-color: $blue-color;
+          color: $white-color;
+          transform: translateY(10px);
+          box-shadow: $box-shadow-hover;
+        }
+      }
     }
   }
 }
 
+// =====================
+// Tablet & Small Desktop
+// =====================
 @media only screen and (max-width: 769px) {
-  .homeCont {
-    align-content: center;
-    flex-wrap: wrap;
-    gap: 3rem;
-    .imgCont {
-      width: 90%;
-      height: 30%;
-      .img {
-        max-width: 100%;
-        height: 20rem;
-      }
-    }
-    .textContainter {
-      font-size: 1.3rem;
-      width: 90%;
-      height: auto;
-      text-align: center;
-      align-items: center;
+  main {
+    .homeCont {
+      flex-direction: column;
+      padding-bottom: 2rem;
 
-      .myResume {
-        font-size: 1.5rem;
+      .textContainer {
+        align-items: center;
+        text-align: center;
+
+        h1,
+        p {
+          width: 100%;
+        }
+
+        .HomeButtonContact {
+          width: 100%;
+        }
       }
     }
   }
 }
 
+// =====================
+// Very Small Screens
+// =====================
 @media only screen and (max-width: 321px) {
-  .homeCont {
-    height: 720px;
+  main {
+    .homeCont {
+      min-height: 100vh;
+
+      .textContainer {
+        h1 {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+
+        .HomeButtonContact {
+          font-size: 1rem;
+          width: 100%;
+        }
+      }
+    }
   }
 }

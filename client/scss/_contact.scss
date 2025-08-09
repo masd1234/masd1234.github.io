@@ -1,55 +1,64 @@
-.container-contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5%;
-  height: 95%;
-  flex-wrap: wrap;
-  align-content: center;
-  .contact {
+main {
+  .container-contact {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
-    border: solid $white-color 1px;
-    padding: 8rem;
-    border-radius: 3rem;
-    height: 30rem;
-    width: 25rem;
-    transition: 1s;
-    &:hover {
-      background-color: $white-color;
-      transform: translateY(-1rem);
+    min-height: 100vh;
 
-      h1,
-      a {
-        color: $blue-color;
-      }
-    }
-
-    h1 {
-      color: $white-color;
-    }
-
-    a {
-      text-decoration: none;
-      color: $white-color;
-      font-size: 1.4rem;
+    .contact {
+      font-size: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      border: solid $white-color 1px;
+      border-radius: 3rem;
+      height: 25rem;
+      width: 25rem;
       transition: 1s;
-      border-radius: 1rem;
-      padding: 0 0.4rem;
+
       &:hover {
-        background-color: $blue-color;
+        background-color: $white-color;
+        transform: translateY(-1rem);
+
+        h3,
+        a {
+          color: $blue-color;
+        }
+      }
+
+      h3 {
         color: $white-color;
+      }
+
+      a {
+        text-decoration: none;
+        color: $white-color;
+        font-size: 1.4rem;
+        transition: 1s;
+        border-radius: 1rem;
+        padding: 0 0.4rem;
+
+        &:hover {
+          background-color: $blue-color;
+          color: $white-color;
+        }
       }
     }
   }
 }
 
-@media only screen and (max-width: 834px) {
+
+@media only screen and (max-width: 769px) {
+main {
   .container-contact {
-    gap: 5%;
-    height: 115rem;
-    padding-top: 1rem;
+    align-content: center;
+    gap: 3rem;
+    .contact{
+      height: 15rem;
+      width: 20rem;
+    }
+    }
   }
 }

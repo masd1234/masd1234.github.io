@@ -7,13 +7,14 @@
 html {
   font-size: 10px;
   font-family: "Poppins", sans-serif;
+  height: 100%;
 }
 
-html,
 body {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   width: 100%;
-  background: rgb(122, 189, 250);
   background: linear-gradient(
     86deg,
     rgba(122, 189, 250, 1) 0%,
@@ -28,4 +29,8 @@ body {
     rgba(18, 159, 255, 1) 100%,
     rgba(50, 116, 255, 1) 100%
   );
+}
+
+main {
+  flex: 1;
 }
