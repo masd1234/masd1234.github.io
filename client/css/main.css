@@ -15,7 +15,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
-  background: linear-gradient(86deg, #7abdfa 0%, #0075ff 48%, #036cff 100%, #0e50ff 100%, #ef4706 100%, #bdcec3 100%, #00ff55 100%, #0e91ff 100%, #00ff19 100%, #129fff 100%, #3274ff 100%);
+  background: linear-gradient(86deg, rgb(122, 189, 250) 0%, rgb(0, 117, 255) 48%, rgb(3, 108, 255) 100%, rgb(14, 80, 255) 100%, rgb(239, 71, 6) 100%, rgb(189, 206, 195) 100%, rgb(0, 255, 85) 100%, rgb(14, 145, 255) 100%, rgb(0, 255, 25) 100%, rgb(18, 159, 255) 100%, rgb(50, 116, 255) 100%);
 }
 
 main {
@@ -36,7 +36,6 @@ main {
     transform: translateX(0);
   }
 }
-
 @keyframes fromdownToUp {
   0% {
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
@@ -48,7 +47,6 @@ main {
     clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
   }
 }
-
 .header {
   width: 100%;
   height: 6%;
@@ -56,33 +54,28 @@ main {
   position: fixed;
   display: flex;
   justify-content: space-evenly;
-  background: #7abdfa;
-  background: linear-gradient(86deg, #7abdfa 0%, #0075ff 48%, #036cff 100%);
+  background: rgb(122, 189, 250);
+  background: linear-gradient(86deg, rgb(122, 189, 250) 0%, rgb(0, 117, 255) 48%, rgb(3, 108, 255) 100%);
 }
-
 .header .logoContainer {
   flex: 1;
   align-content: center;
 }
-
 .header .logoContainer .logo {
   margin-left: 5rem;
   font-size: 2rem;
   color: whitesmoke;
 }
-
 .header nav {
   flex: 1;
   align-content: center;
 }
-
 .header nav .navBar {
   font-size: 1.9rem;
   display: flex;
   justify-content: space-evenly;
   list-style: none;
 }
-
 .header nav .navBar li a {
   color: whitesmoke;
   text-decoration: none;
@@ -90,42 +83,35 @@ main {
   padding: 0.2rem 0.6rem;
   transition: 1s;
 }
-
 .header nav .navBar li a:hover {
   background-color: whitesmoke;
-  color: #2069f1;
+  color: rgb(32, 105, 241);
 }
-
 .header .mobileMenu {
   display: none;
-  background-color: #2069f1;
+  background-color: rgb(32, 105, 241);
   border: none;
   cursor: pointer;
   margin-right: 2rem;
   margin-left: auto;
   position: relative;
 }
-
 .header .mobileMenu #one,
 .header .mobileMenu #two,
 .header .mobileMenu #three {
   transition: 1s;
 }
-
 .header .mobileMenu .line-one {
   transform: rotate(45deg) translate(5.1px, 5.1px);
   transition: 1s;
 }
-
 .header .mobileMenu .line-two {
   opacity: 0;
 }
-
 .header .mobileMenu .line-three {
   transform: rotate(-45deg) translate(6.1px, -6.1px);
   transition: 1s;
 }
-
 .header .mobileMenu .mobileMenuItem {
   background-color: whitesmoke;
   height: 4px;
@@ -145,11 +131,10 @@ main {
   opacity: 0;
   height: 100%;
   width: 100%;
-  background-color: #2069f1;
+  background-color: rgb(32, 105, 241);
   transition: 1s;
   z-index: -1;
 }
-
 .mobileMenuDisplayedItems ul {
   height: 30%;
   display: flex;
@@ -157,11 +142,9 @@ main {
   justify-content: space-evenly;
   flex-direction: column;
 }
-
 .mobileMenuDisplayedItems ul li {
   list-style: none;
 }
-
 .mobileMenuDisplayedItems ul li a {
   text-decoration: none;
   color: whitesmoke;
@@ -169,26 +152,24 @@ main {
   border-radius: 0.5rem;
   padding: 0.4rem;
 }
-
 .mobileMenuDisplayedItems ul li a:hover {
   background-color: whitesmoke;
-  color: #2069f1;
+  color: rgb(32, 105, 241);
   transition: 1.5s;
 }
 
 .buttomUndisplay {
   border: none;
-  background-color: #2069f1;
+  background-color: rgb(32, 105, 241);
   color: whitesmoke;
   cursor: pointer;
   font-size: 2rem;
   border-radius: 2rem;
   padding: 0rem 0.5rem;
 }
-
 .buttomUndisplay:hover {
   background-color: whitesmoke;
-  color: #2069f1;
+  color: rgb(32, 105, 241);
   transition: 1.5s;
 }
 
@@ -211,9 +192,8 @@ main {
     color: red;
   }
 }
-
 footer {
-  color: #2069f1;
+  color: rgb(32, 105, 241);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -221,7 +201,6 @@ footer {
   width: 100%;
   background-color: whitesmoke;
 }
-
 footer p {
   flex-basis: 100%;
   padding-left: 1rem;
@@ -230,14 +209,12 @@ footer p {
 main {
   height: 100vh;
 }
-
 main .homeCont {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   min-height: 100vh;
 }
-
 main .homeCont .textContainer {
   animation-duration: 1s;
   animation-name: fromdownToUp;
@@ -253,11 +230,9 @@ main .homeCont .textContainer {
   color: whitesmoke;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
-
 main .homeCont .textContainer h1 {
   font-size: 3rem;
 }
-
 main .homeCont .textContainer .HomeButtonContact {
   color: whitesmoke;
   margin-top: 1rem;
@@ -273,16 +248,14 @@ main .homeCont .textContainer .HomeButtonContact {
   transform: translateY(0px);
   animation-timing-function: linear;
 }
-
 main .homeCont .textContainer .HomeButtonContact:hover {
   background-color: whitesmoke;
-  color: #2069f1;
+  color: rgb(32, 105, 241);
   transform: translateY(-5px);
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.089);
 }
-
 main .homeCont .textContainer .HomeButtonContact:active {
-  background-color: #2069f1;
+  background-color: rgb(32, 105, 241);
   color: whitesmoke;
   transform: translateY(10px);
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.089);
@@ -305,7 +278,6 @@ main .homeCont .textContainer .HomeButtonContact:active {
     width: 100%;
   }
 }
-
 @media only screen and (max-width: 321px) {
   main .homeCont {
     min-height: 100vh;
@@ -321,7 +293,6 @@ main .homeCont .textContainer .HomeButtonContact:active {
     width: 100%;
   }
 }
-
 .projects {
   overflow: hidden;
 }
@@ -334,7 +305,6 @@ main .homeCont .textContainer .HomeButtonContact:active {
   height: 800px;
   color: whitesmoke;
 }
-
 .projects_title h1 {
   font-size: 4.5rem;
   text-align: center;
@@ -359,14 +329,12 @@ main .homeCont .textContainer .HomeButtonContact:active {
   justify-content: center;
   flex-direction: column;
 }
-
 .textContainerProjects .container-scroll {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
   gap: 1rem;
 }
-
 .textContainerProjects .container-scroll .linkProjects:link {
   flex-basis: 40%;
   flex-grow: 0.2;
@@ -382,20 +350,17 @@ main .homeCont .textContainer .HomeButtonContact:active {
   transition: 1s;
   box-shadow: 1px 1px 2px 0.5px rgba(0, 0, 0, 0.205);
 }
-
 .textContainerProjects .container-scroll .linkProjects:hover {
   background-color: whitesmoke;
-  color: #2692f7;
+  color: rgb(38, 146, 247);
   transform: translateY(-5px);
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.089);
 }
-
 .textContainerProjects .container-scroll .linkProjects:active {
-  background-color: #2069f1;
+  background-color: rgb(32, 105, 241);
   color: whitesmoke;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.089);
 }
-
 .textContainerProjects .container-scroll p {
   margin-left: 1rem;
 }
@@ -407,40 +372,33 @@ main .homeCont .textContainer .HomeButtonContact:active {
   height: auto;
   margin-bottom: 10rem;
 }
-
 .projectContainer .titleCont {
   color: whitesmoke;
   font-size: 3rem;
   height: 8rem;
 }
-
 .projectContainer .js {
   margin-bottom: 5rem;
 }
-
 .projectContainer .fade-out {
   opacity: 0;
 }
-
 .projectContainer .fade-in-appear {
   opacity: 1;
   transition: opacity 1s linear;
   transform: translateY(-120px);
   transition: 1s;
 }
-
 .projectContainer .fade-out-left {
   opacity: 0;
   transform: translateX(-100px);
 }
-
 .projectContainer .fade-in-appear-left {
   opacity: 1;
   transition: opacity 1s linear;
   transform: translateX(0px);
   transition: 1s;
 }
-
 .projectContainer .containerMultiple {
   display: flex;
   align-items: center;
@@ -451,7 +409,6 @@ main .homeCont .textContainer .HomeButtonContact:active {
   height: 50%;
   width: 100%;
 }
-
 .projectContainer .containerMultiple .containerProjectShow {
   height: 85rem;
   width: 100%;
@@ -462,7 +419,6 @@ main .homeCont .textContainer .HomeButtonContact:active {
   flex-wrap: wrap;
   align-content: center;
 }
-
 .projectContainer .containerMultiple .containerProjectShow .projectOverview {
   width: 60%;
   height: 20%;
@@ -472,27 +428,23 @@ main .homeCont .textContainer .HomeButtonContact:active {
   gap: 2rem;
   flex-direction: column;
 }
-
 .projectContainer .containerMultiple .containerProjectShow .title-projectOverview {
   font-size: 4rem;
-  color: #2069f1;
+  color: rgb(32, 105, 241);
 }
-
 .projectContainer .containerMultiple .containerProjectShow .title-projectOverview-descripton {
-  color: #2069f1;
+  color: rgb(32, 105, 241);
   font-size: 1.5rem;
   width: 85%;
 }
-
 .projectContainer .containerMultiple .containerProjectShow .conIndv {
   position: relative;
-  background-image: linear-gradient(180deg, white, #dfdfdf);
+  background-image: linear-gradient(180deg, rgb(255, 255, 255), rgb(223, 223, 223));
   height: 33rem;
   border-radius: 1.5rem;
-  color: #2692f7;
+  color: rgb(38, 146, 247);
   text-align: center;
 }
-
 .projectContainer .containerMultiple .containerProjectShow .conIndv .video {
   border-radius: 1.5rem 1.5rem 0 0;
   position: absolute;
@@ -501,19 +453,17 @@ main .homeCont .textContainer .HomeButtonContact:active {
   height: 11rem;
   width: 100%;
 }
-
 .projectContainer .containerMultiple .containerProjectShow .conIndv .containerButtom {
   position: absolute;
   top: 22rem;
   min-width: 200px;
   max-width: 200px;
 }
-
 .projectContainer .containerMultiple .containerProjectShow .conIndv .containerButtom .show:link, .projectContainer .containerMultiple .containerProjectShow .conIndv .containerButtom .show:visited {
   transform: translateY(0px);
   transition: 1s;
   text-decoration: none;
-  color: #2069f1;
+  color: rgb(32, 105, 241);
   padding: 0.5rem;
   border-radius: 0.5rem;
   margin: 0 0.5rem;
@@ -521,16 +471,14 @@ main .homeCont .textContainer .HomeButtonContact:active {
   transition: 1s;
   display: inline-block;
 }
-
 .projectContainer .containerMultiple .containerProjectShow .conIndv .containerButtom .show:hover {
   color: whitesmoke;
-  background-color: #2069f1;
+  background-color: rgb(32, 105, 241);
   transform: translateY(-1px);
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.089);
 }
-
 .projectContainer .containerMultiple .containerProjectShow .conIndv .containerButtom .show:active {
-  color: #2069f1;
+  color: rgb(32, 105, 241);
   background-color: whitesmoke;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.089);
 }
@@ -554,17 +502,15 @@ main .homeCont .textContainer .HomeButtonContact:active {
   flex-shrink: 1;
   perspective: 1000px;
 }
-
 .flip-card .flip-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-  box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem #a1a1a1;
+  box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem rgb(161, 161, 161);
   border-radius: 1rem;
 }
-
 .flip-card .flip-card-inner .flip-card-front {
   display: flex;
   flex-direction: column;
@@ -572,7 +518,6 @@ main .homeCont .textContainer .HomeButtonContact:active {
   align-items: center;
   gap: 2rem;
 }
-
 .flip-card .flip-card-inner .flip-card-back {
   display: flex;
   flex-direction: column;
@@ -581,7 +526,6 @@ main .homeCont .textContainer .HomeButtonContact:active {
   gap: 1rem;
   transform: rotateY(180deg);
 }
-
 .flip-card .flip-card-inner .flip-card-front,
 .flip-card .flip-card-inner .flip-card-back {
   position: absolute;
@@ -650,13 +594,11 @@ main .homeCont .textContainer .HomeButtonContact:active {
     font-size: 1.1rem;
   }
 }
-
 @media only screen and (max-width: 280px) {
   .containerButtom {
     width: 80%;
   }
 }
-
 main .container-contact {
   display: flex;
   flex-wrap: wrap;
@@ -664,34 +606,29 @@ main .container-contact {
   align-items: center;
   min-height: 100vh;
 }
-
 main .container-contact .contact {
   font-size: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  flex: 0.15 0.2 auto;
   align-items: center;
   border: solid whitesmoke 1px;
   border-radius: 3rem;
-  height: 25rem;
-  width: 25rem;
+  height: 40rem;
   transition: 1s;
 }
-
 main .container-contact .contact:hover {
   background-color: whitesmoke;
   transform: translateY(-1rem);
 }
-
 main .container-contact .contact:hover h3,
 main .container-contact .contact:hover a {
-  color: #2069f1;
+  color: rgb(32, 105, 241);
 }
-
 main .container-contact .contact h3 {
   color: whitesmoke;
 }
-
 main .container-contact .contact a {
   text-decoration: none;
   color: whitesmoke;
@@ -700,9 +637,8 @@ main .container-contact .contact a {
   border-radius: 1rem;
   padding: 0 0.4rem;
 }
-
 main .container-contact .contact a:hover {
-  background-color: #2069f1;
+  background-color: rgb(32, 105, 241);
   color: whitesmoke;
 }
 
@@ -712,7 +648,7 @@ main .container-contact .contact a:hover {
     gap: 3rem;
   }
   main .container-contact .contact {
-    height: 15rem;
-    width: 20rem;
+    width: 50%;
+    height: 20rem;
   }
 }
