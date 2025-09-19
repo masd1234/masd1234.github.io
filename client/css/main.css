@@ -229,7 +229,7 @@ main .homeCont .textContainer {
   width: 80%;
   font-size: 1.7rem;
   color: whitesmoke;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 0% 0, 0% 0%, 0 0%);
 }
 main .homeCont .textContainer h1 {
   font-size: 3rem;
