@@ -34,9 +34,9 @@
       </div>
       <nav>
         <ul class="navBar">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./client/html/projects.html">Projects</a></li>
-          <li><a href="./client/html/contact.html">Contact</a></li>
+          <li><a href="#homeSection">Home</a></li>
+          <li><a href="#projectsSection">Projects</a></li>
+          <li><a href="#contactSection">Contact</a></li>
         </ul>
       </nav>
       <div class="mobileMenu" aria-label="Mobile navigation toggle">
@@ -55,7 +55,7 @@
     </nav>
 
     <main>
-      <section class="homeCont">
+      <section class="homeCont" id="homeSection">
         <div class="textContainer">
           <h1>Marco Sanchez</h1>
           <p>
@@ -64,9 +64,46 @@
             React.js, and Express.js, along with version control using Git and
             GitHub.
           </p>
-          <a href="./client/html/contact.html" class="HomeButtonContact"
-            >Contact Me</a
-          >
+          <a href="#contactSection" class="HomeButtonContact">Contact Me</a>
+        </div>
+      </section>
+      <section class="projects" id="projectsSection">
+        <div class="projects_title">
+          <h1>My Projects</h1>
+          <div class="textContainerProjects">
+            <p>
+              In this section you will find my projects to showcase my skills.
+            </p>
+            <div class="container-scroll">
+              <a class="linkProjects" href="#projects">JavaScript</a>
+              <a class="linkProjects" href="#react">React</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="projectContainer" id="projects">
+          <h2 class="titleCont">
+            My Projects: JavaScript
+            <i class="fab fa-js-square" aria-hidden="true"></i>
+          </h2>
+          <div class="containerMultiple js"></div>
+
+          <h2 class="titleCont" id="jsx">
+            My Projects: React <i class="fab fa-react" aria-hidden="true"></i>
+          </h2>
+          <div class="containerMultiple react" id="react"></div>
+        </div>
+      </section>
+
+      <section class="container-contact" id="contactSection">
+        <div class="contact">
+          <h3>Email</h3>
+          <a href="mailto:marco.sanchez.dev@outlook.com">Click Here</a>
+        </div>
+
+        <div class="contact">
+          <h3>GitHub</h3>
+          <a href="https://github.com/masd1234" target="_blank">Click Here</a>
         </div>
       </section>
     </main>
